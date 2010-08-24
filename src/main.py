@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 import sys
 import pygame
@@ -6,7 +6,7 @@ import pygame
 pygame.init()
 
 pygame.display.set_caption('Project 13')
-size = width, height = 600,400
+size = width, height = 640,480
 screen = pygame.display.set_mode(size)
 
 while 1:
