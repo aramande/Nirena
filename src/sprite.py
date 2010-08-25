@@ -3,21 +3,19 @@ import pygame
 class Sprite(pygame.sprite.Sprite):
 	def __init__(self):
 		pygame.sprite.Sprite.__init__(self)
-		self.x = 0
-		self.y = 0
 
 	def update(self):
 		pass
 
 	def setPosition(self, xy, y=None):
 		if y == None:
-			(self.x,self.y) = xy
+			(self.rect.left, self.rect.top) = xy
 		else:
-			self.x = xy
-			self.y = y
+			self.rect.left = xy
+			self.rect.top = y
 	
 	def getPosition(self):
-		return self.x,self.y
+		return self.rect.left,self.rect.top
 		
 	def setVelocity(self,xy,y=None):
 		if y == None:

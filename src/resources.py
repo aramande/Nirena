@@ -14,7 +14,6 @@ def load_image(name):
 		else:
 			image = image.convert_alpha()
 	except pygame.error as e:
-		print('Cannot load image:', fullname)
 		print(e)
 		raise SystemExit
 	return image
