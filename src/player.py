@@ -7,7 +7,7 @@ from resources import load_image
 class Player(sprite.Sprite):
 	def __init__(self):
 		sprite.Sprite.__init__(self)
-		self.image = load_image('player.png')
+		self.image = load_image('hero.png')
 		self.rect = self.image.get_rect()
 		screen = pygame.display.get_surface()
 		self.area = screen.get_rect()

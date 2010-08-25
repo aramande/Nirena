@@ -1,4 +1,5 @@
-import os, pygame
+import os
+import pygame
 def load_image(name):
 	fullname = '../data/images/'+ name
 #	global loaded

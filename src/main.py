@@ -16,7 +16,7 @@ clock = pygame.time.Clock()
 player = pygame.sprite.GroupSingle(player.Player())
 render = pygame.sprite.RenderPlain()
 render.add(player)
-#background = load_image("background.jpg")
+background = load_image("background.jpg")
 player.sprite.setPosition(100,100)
 #loop
 while True:
@@ -25,12 +25,13 @@ while True:
 		if event.type == pygame.QUIT:sys.exit()
 		#player.sprite.processMovement(event)
 		player.sprite.processMovement(event)
+       	#fps
+	clock.tick(60)
 
-	#screen.blit(background, (0,0))
+
+	screen.blit(background, (0,0))
 	player.update()
 	render.draw(screen)
 	#updates screen
 	pygame.display.update()
-	#fps
-	clock.tick(60)
 
