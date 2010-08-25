@@ -3,22 +3,26 @@
 import sys
 import pygame
 import pygame.mixer
-from sprite import *
+import player
 
 pygame.init()
-
-#variables
-clock = pygame.time.Clock()
-sprite = Sprite("test.png","test")
 
 #window
 pygame.display.set_caption('Project 13')
 size = width, height = 640,480
 screen = pygame.display.set_mode(size)
 
-#loop
-while 1:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:sys.exit()
-#fps        
-        clock.tick(60)
+#variables
+clock = pygame.time.Clock()
+player = pygame.sprite.GroupSingle(player.Player())
+render = pygame.sprite.RenderPlain()
+render.add(player)
+
+while True:
+		for event in pygame.event.get():
+			if event.type == pygame.QUIT:sys.exit()
+		player.update()
+		render.draw(screen)
+		pygame.display.flip()
+		#fps
+		clock.tick(60)
