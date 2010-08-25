@@ -2,7 +2,7 @@
 
 class Sprite:
 	def __init__(self, sheetimage, groups):
-		return self
+		pass
 	def add(self, groups):
 		""" Adds the sprite to @groups """
 		return True
@@ -24,7 +24,7 @@ class Sprite:
 class Group:
 	sprites = []
 	def __init__(self, sprites):
-		return self
+		pass
 	def add(self, sprites):
 		""" Adds the @sprites to group """
 		return True
