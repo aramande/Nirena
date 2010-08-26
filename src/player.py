@@ -18,6 +18,7 @@ class Player(sprite.Sprite):
 		self.flipped = False
 		self.velx = 0
 		self.vely = 0
+		self.accy = 0
 	def update(self):
 		sprite.Sprite.update(self)
 		tmpimage = self.image
@@ -26,6 +27,9 @@ class Player(sprite.Sprite):
 				tmpimage = pygame.transform.flip(tmpimage,1,0)
 			self.image=tmpimage
 		self.rect.left += self.velx
+		if self.vely < 5 and self.vely > -10:
+			self.vely += self.accy 
+			self.vely += self.gravity
 		self.rect.top += self.vely
 
 	def processMovement(self, event):
@@ -35,15 +39,26 @@ class Player(sprite.Sprite):
 			elif event.key == pygame.K_RIGHT:
 				self.velx = +1
 			elif event.key == pygame.K_UP:
-				self.vely = -1
+				if self.vely == 0:
+					self.accy = -4
 			elif event.key == pygame.K_DOWN:
-				self.vely = +1
+				#self.vely = +1
+				pass
 		if event.type == pygame.KEYUP:
 			if event.key == pygame.K_LEFT:
 				self.velx= 0
 			elif event.key == pygame.K_RIGHT:
 				self.velx= 0
 			elif event.key == pygame.K_UP:
-				self.vely= 0
+				self.accy= 0
 			elif event.key == pygame.K_DOWN:
 				self.vely= 0
+				
+	def isCollidingWith(self, sprites, groups):
+		#if sprites.count(sprites) == 0:
+		#	return None
+		for sprite in sprites:
+			if groups['ground'] in sprite.groups():
+				self.vely = 0
+				self.accy = -self.gravity ### TEMP FIX, WILL CHANGE SOON ###
+		
