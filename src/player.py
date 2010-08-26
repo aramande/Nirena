@@ -19,6 +19,10 @@ class Player(sprite.Sprite):
 		self.velx = 0
 		self.vely = 0
 		self.accy = 0
+		self.normal = 0
+		self.force = 0
+		self.jumping = False
+		
 	def update(self):
 		sprite.Sprite.update(self)
 		tmpimage = self.image
@@ -27,38 +31,42 @@ class Player(sprite.Sprite):
 				tmpimage = pygame.transform.flip(tmpimage,1,0)
 			self.image=tmpimage
 		self.rect.left += self.velx
-		if self.vely < 5 and self.vely > -10:
-			self.vely += self.accy 
-			self.vely += self.gravity
-		self.rect.top += self.vely
+		self.vely += self.accy + self.gravity - self.normal
+		self.rect.top += self.vely 
+		self.accy = 0
 
 	def processMovement(self, event):
 		if event.type == pygame.KEYDOWN:
-			if event.key == pygame.K_LEFT:
-				self.velx = -1
-			elif event.key == pygame.K_RIGHT:
-				self.velx = +1
-			elif event.key == pygame.K_UP:
-				if self.vely == 0:
-					self.accy = -4
+			if event.key == pygame.K_LEFT or \
+			event.key == pygame.K_a:
+				self.velx = -2
+			elif event.key == pygame.K_RIGHT or \
+			event.key == pygame.K_d:
+				self.velx = +2
+			elif event.key == pygame.K_UP or \
+			event.key == pygame.K_w or \
+			event.key == pygame.K_SPACE or \
+			event.key == pygame.K_z:
+				if not self.jumping:
+					self.accy = -10.0
+					self.jumping = True
 			elif event.key == pygame.K_DOWN:
-				#self.vely = +1
 				pass
 		if event.type == pygame.KEYUP:
 			if event.key == pygame.K_LEFT:
-				self.velx= 0
+				self.velx = 0
 			elif event.key == pygame.K_RIGHT:
-				self.velx= 0
+				self.velx = 0
 			elif event.key == pygame.K_UP:
-				self.accy= 0
+				self.accy = 0
 			elif event.key == pygame.K_DOWN:
-				self.vely= 0
+				pass
 				
 	def isCollidingWith(self, sprites, groups):
-		#if sprites.count(sprites) == 0:
-		#	return None
+		self.normal = 0
 		for sprite in sprites:
 			if groups['ground'] in sprite.groups():
-				self.vely = 0
-				self.accy = -self.gravity ### TEMP FIX, WILL CHANGE SOON ###
-		
+				if(self.vely > 0):
+					self.vely = 0
+					self.normal = sprite.force
+					self.jumping = False

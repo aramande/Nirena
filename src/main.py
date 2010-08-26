@@ -27,15 +27,17 @@ render.add(ground)
 while True:
 	pygame.event.pump()
 	for event in pygame.event.get():
-		if event.type == pygame.QUIT:sys.exit()
+		if event.type == pygame.QUIT:
+			sys.exit()
+		if event.type == pygame.KEYDOWN:
+			if event.key == pygame.K_ESCAPE:
+				sys.exit()
 		player.sprite.processMovement(event)
-       	#fps
-	clock.tick(60)
+		
 	player.sprite.isCollidingWith(pygame.sprite.spritecollide(player.sprite, ground, False), groups)
-
 	screen.blit(background, (0,0))
 	player.update()
 	render.draw(screen)
 	#updates screen
 	pygame.display.update()
-
+	clock.tick(60)
