@@ -3,7 +3,7 @@ import pygame
 class Sprite(pygame.sprite.Sprite):
 	def __init__(self):
 		pygame.sprite.Sprite.__init__(self)
-
+		self.gravity = 1.15
 	def update(self):
 		pass
 
