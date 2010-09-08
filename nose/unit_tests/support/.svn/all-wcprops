@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/562/branches/py3k/unit_tests/support
+END
+test.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/561/branches/py3k/unit_tests/support/test.py
+END
+script.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/562/branches/py3k/unit_tests/support/script.py
+END

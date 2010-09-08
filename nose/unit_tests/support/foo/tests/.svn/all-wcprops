@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/561/branches/py3k/unit_tests/support/foo/tests
+END
+dir_test_file.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/561/branches/py3k/unit_tests/support/foo/tests/dir_test_file.py
+END

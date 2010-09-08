@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/561/branches/py3k/functional_tests/support/ep
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/561/branches/py3k/functional_tests/support/ep/setup.py
+END
+someplugin.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/561/branches/py3k/functional_tests/support/ep/someplugin.py
+END

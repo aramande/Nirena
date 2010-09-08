@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/594/branches/py3k/functional_tests
+END
+test_suite.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/562/branches/py3k/functional_tests/test_suite.py
+END
+test_skip_pdb_interaction.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/573/branches/py3k/functional_tests/test_skip_pdb_interaction.py
+END
+test_namespace_pkg.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/562/branches/py3k/functional_tests/test_namespace_pkg.py
+END
+test_plugintest.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/562/branches/py3k/functional_tests/test_plugintest.py
+END
+test_entrypoints.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/561/branches/py3k/functional_tests/test_entrypoints.py
+END
+test_cases.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/561/branches/py3k/functional_tests/test_cases.py
+END
+test_commands.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/562/branches/py3k/functional_tests/test_commands.py
+END
+test_importer.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/562/branches/py3k/functional_tests/test_importer.py
+END
+test_loader.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/573/branches/py3k/functional_tests/test_loader.py
+END
+test_program.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/562/branches/py3k/functional_tests/test_program.py
+END
+test_success.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/562/branches/py3k/functional_tests/test_success.py
+END
+test_id_plugin.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/575/branches/py3k/functional_tests/test_id_plugin.py
+END
+test_result.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/562/branches/py3k/functional_tests/test_result.py
+END
+test_load_tests_from_test_case.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/562/branches/py3k/functional_tests/test_load_tests_from_test_case.py
+END
+test_isolate_plugin.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/562/branches/py3k/functional_tests/test_isolate_plugin.py
+END
+test_issue_072.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/562/branches/py3k/functional_tests/test_issue_072.py
+END
+test_selector.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/561/branches/py3k/functional_tests/test_selector.py
+END
+test_attribute_plugin.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/562/branches/py3k/functional_tests/test_attribute_plugin.py
+END
+test_issue_082.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/562/branches/py3k/functional_tests/test_issue_082.py
+END
+test_plugins.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/562/branches/py3k/functional_tests/test_plugins.py
+END
+test_doctest_plugin.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/562/branches/py3k/functional_tests/test_doctest_plugin.py
+END
+test_plugin_api.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/562/branches/py3k/functional_tests/test_plugin_api.py
+END
+test_config_files.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/561/branches/py3k/functional_tests/test_config_files.py
+END
+test_failuredetail_plugin.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/562/branches/py3k/functional_tests/test_failuredetail_plugin.py
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/562/branches/py3k/functional_tests/doc_tests/test_multiprocess/support
+END
+test_can_split.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/562/branches/py3k/functional_tests/doc_tests/test_multiprocess/support/test_can_split.py
+END
+test_shared.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/562/branches/py3k/functional_tests/doc_tests/test_multiprocess/support/test_shared.py
+END
+test_not_shared.py
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/562/branches/py3k/functional_tests/doc_tests/test_multiprocess/support/test_not_shared.py
+END

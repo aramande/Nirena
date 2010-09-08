@@ -1,0 +1,134 @@
+10
+
+dir
+636
+http://python-nose.googlecode.com/svn/branches/py3k/functional_tests/support
+http://python-nose.googlecode.com/svn
+
+
+
+2009-02-21T18:10:43.425749Z
+594
+jpellerin
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+f2aedcf1-e524-0410-9c8c-f7a7fd695dcf
+
+issue143
+dir
+
+issue072
+dir
+
+issue082
+dir
+
+issue191
+dir
+
+att
+dir
+
+dtt
+dir
+
+ipt
+dir
+
+namespace_pkg
+dir
+
+ctx
+dir
+
+empty
+dir
+
+dir1
+dir
+
+dir2
+dir
+
+ltfn
+dir
+
+ep
+dir
+
+todo
+dir
+
+pass
+dir
+
+fdp
+dir
+
+gen
+dir
+
+twist
+dir
+
+ltftc
+dir
+
+idp
+dir
+
+package1
+dir
+
+package2
+dir
+
+test.cfg
+file
+
+
+
+
+2010-09-08T19:24:09.629805Z
+e79f2a6e252ef2c08bfc17c17bfb1b1a
+2007-04-10T21:50:35.790698Z
+145
+jpellerin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+25
+
+package3
+dir
+

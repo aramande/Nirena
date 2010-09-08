@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/601/branches/py3k
+END
+README.BDIST_RPM
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/561/branches/py3k/README.BDIST_RPM
+END
+selftest.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/561/branches/py3k/selftest.py
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/561/branches/py3k/AUTHORS
+END
+nosetests.1
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/561/branches/py3k/nosetests.1
+END
+CHANGELOG
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/561/branches/py3k/CHANGELOG
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/593/branches/py3k/setup.py
+END
+test.sh
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/595/branches/py3k/test.sh
+END
+NOTES
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/575/branches/py3k/NOTES
+END
+PLUGIN_API_CHANGES.txt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/561/branches/py3k/PLUGIN_API_CHANGES.txt
+END
+setup.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/561/branches/py3k/setup.cfg
+END
+tickets.csv
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/561/branches/py3k/tickets.csv
+END
+NEWS_0.9
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/561/branches/py3k/NEWS_0.9
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/561/branches/py3k/TODO
+END
+index.html.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/561/branches/py3k/index.html.tpl
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/561/branches/py3k/README.txt
+END
+install-rpm.sh
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/561/branches/py3k/install-rpm.sh
+END
+MANIFEST.in
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/561/branches/py3k/MANIFEST.in
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/561/branches/py3k/NEWS
+END
+tickets.rss
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/561/branches/py3k/tickets.rss
+END
+TODO_0_9
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/561/branches/py3k/TODO_0_9
+END
+lgpl.txt
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/561/branches/py3k/lgpl.txt
+END
+setup.cfg.release
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/561/branches/py3k/setup.cfg.release
+END

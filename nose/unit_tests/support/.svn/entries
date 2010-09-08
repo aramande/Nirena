@@ -1,0 +1,126 @@
+10
+
+dir
+636
+http://python-nose.googlecode.com/svn/branches/py3k/unit_tests/support
+http://python-nose.googlecode.com/svn
+
+
+
+2008-12-15T23:41:25.533534Z
+562
+jpellerin
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+f2aedcf1-e524-0410-9c8c-f7a7fd695dcf
+
+bug101
+dir
+
+other
+dir
+
+issue065
+dir
+
+foo
+dir
+
+bug105
+dir
+
+doctest
+dir
+
+test.py
+file
+
+
+
+
+2010-09-08T19:24:15.969167Z
+8f6f84478d7f68fddd3b5cf08301a483
+2006-12-19T03:35:52.135548Z
+10
+jpellerin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+209
+
+pkgorg
+dir
+
+test-dir
+dir
+
+script.py
+file
+
+
+
+
+2010-09-08T19:24:15.974167Z
+b12918b863a73baf760d3dd45f9f59bb
+2008-12-15T23:41:25.533534Z
+562
+jpellerin
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+37
+
+config_defaults
+dir
+
+issue006
+dir
+

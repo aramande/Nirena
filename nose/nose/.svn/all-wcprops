@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/601/branches/py3k/nose
+END
+core.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/571/branches/py3k/nose/core.py
+END
+suite.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/571/branches/py3k/nose/suite.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/561/branches/py3k/nose/__init__.py
+END
+_2.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/600/branches/py3k/nose/_2.py
+END
+tools.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/562/branches/py3k/nose/tools.py
+END
+_3.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/600/branches/py3k/nose/_3.py
+END
+commands.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/562/branches/py3k/nose/commands.py
+END
+importer.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/561/branches/py3k/nose/importer.py
+END
+twistedtools.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/562/branches/py3k/nose/twistedtools.py
+END
+config.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/597/branches/py3k/nose/config.py
+END
+loader.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/601/branches/py3k/nose/loader.py
+END
+inspector.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/575/branches/py3k/nose/inspector.py
+END
+case.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/575/branches/py3k/nose/case.py
+END
+util.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/600/branches/py3k/nose/util.py
+END
+result.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/597/branches/py3k/nose/result.py
+END
+exc.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/561/branches/py3k/nose/exc.py
+END
+selector.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/573/branches/py3k/nose/selector.py
+END
+compat.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/597/branches/py3k/nose/compat.py
+END
+failure.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/598/branches/py3k/nose/failure.py
+END

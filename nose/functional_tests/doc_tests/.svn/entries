@@ -1,0 +1,64 @@
+10
+
+dir
+636
+http://python-nose.googlecode.com/svn/branches/py3k/functional_tests/doc_tests
+http://python-nose.googlecode.com/svn
+
+
+
+2009-01-23T16:35:22.038034Z
+580
+jpellerin
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+f2aedcf1-e524-0410-9c8c-f7a7fd695dcf
+
+test_issue107
+dir
+
+test_init_plugin
+dir
+
+test_restricted_plugin_options
+dir
+
+test_issue145
+dir
+
+test_issue119
+dir
+
+test_issue097
+dir
+
+test_issue089
+dir
+
+test_multiprocess
+dir
+
+test_doctest_fixtures
+dir
+
+test_selector_plugin
+dir
+
+test_coverage_html
+dir
+
+test_issue142
+dir
+

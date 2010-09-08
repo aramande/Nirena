@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/580/branches/py3k/functional_tests/doc_tests/test_multiprocess
+END
+multiprocess.rst
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/576/branches/py3k/functional_tests/doc_tests/test_multiprocess/multiprocess.rst
+END
+multiprocess_fixtures.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/580/branches/py3k/functional_tests/doc_tests/test_multiprocess/multiprocess_fixtures.py
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/561/branches/py3k/functional_tests/support/ltfn/test_pak1
+END
+test_mod.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/561/branches/py3k/functional_tests/support/ltfn/test_pak1/test_mod.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/561/branches/py3k/functional_tests/support/ltfn/test_pak1/__init__.py
+END
