@@ -10,9 +10,14 @@ import optparse
 from pygame.locals import *
 from resources import load_image
 
+SCREEN_WIDTH = 640
+SCREEN_HEIGHT = 480
+SCREEN_DEPTH = 32
+FPS = 60
+
 def rungame():
 	pygame.init()
-	screen = pygame.display.set_mode((640,480),0,32)
+	screen = pygame.display.set_mode((SCREEN_WIDTH,SCREEN_HEIGHT),0,SCREEN_DEPTH)
 	pygame.display.set_caption('Project 13')
 
 	#variables
@@ -30,6 +35,7 @@ def rungame():
 	while True:
 		pygame.event.pump()
 		for event in pygame.event.get():
+			#Testing for various exit signals from the user
 			if event.type == pygame.QUIT:
 				sys.exit()
 			if event.type == pygame.KEYDOWN:
@@ -41,9 +47,8 @@ def rungame():
 		screen.blit(background, (0,0))
 		hero.update(clock.get_time())
 		render.draw(screen)
-		#updates screen
 		pygame.display.update()
-		clock.tick(60)
+		clock.tick(FPS)
 		
 p = optparse.OptionParser()
 p.add_option('--test', '-t', action ='store_true', help='run the game through all tests')
