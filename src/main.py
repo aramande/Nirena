@@ -6,6 +6,7 @@ import pygame.mixer
 import player
 import ground
 import nose
+import optparse
 from pygame.locals import *
 from resources import load_image
 
@@ -44,7 +45,13 @@ def rungame():
 		pygame.display.update()
 		clock.tick(60)
 		
-if "-t" in sys.argv or "--test" in sys.argv:
-	nose.run()
+p = optparse.OptionParser()
+p.add_option('--test', '-t', action ='store_true', help='run the game through all tests')
+options, arguments = p.parse_args()
+if options.test == True:
+	temp_argv = sys.argv
+	sys.argv = [sys.argv[0]]
+	nose.main()
+	sys.argv = temp_argv
 else:
 	rungame()

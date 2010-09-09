@@ -33,7 +33,7 @@ class Player(sprite.Sprite):
 			raise ValueError
 		v = self.vely + a * dt
 		if v > self.terminalVelocity :
-			v = self.vely
+			v = self.terminalVelocity
 		if not self.fall and v > 0 :
 			v = 0
 		if v < 0:
@@ -87,7 +87,7 @@ class Player(sprite.Sprite):
 			if groups['ground'] in sprite.groups():
 				if(self.vely > 0):
 					self.fall = False
+					self.jumping = False
 					t_x, t_y = self.getPosition()
 					junk, t_y = sprite.getPosition()
 					self.setPosition(t_x, t_y-(self.rect.bottom-self.rect.top-1.0))
-					self.jumping = False
