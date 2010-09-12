@@ -1,4 +1,4 @@
-import player
+import src.player
 import unittest
 
 class PlayerStub(player.Player):

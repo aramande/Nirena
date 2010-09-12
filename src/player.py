@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 
 import pygame
-import sprite
-from resources import load_image
-from settings import *
+import src.sprite
+from src.resources import load_image
+from src.settings import *
 
-class Player(sprite.Sprite):
+class Player(src.sprite.Sprite):
 	def __init__(self):
-		sprite.Sprite.__init__(self)
+		src.sprite.Sprite.__init__(self)
 		self.image = load_image('hero.png')
 		self.rect = self.image.get_rect()
 		screen = pygame.display.get_surface()
@@ -41,7 +41,7 @@ class Player(sprite.Sprite):
 		return round(v, 2)
 	
 	def update(self, dt):
-		sprite.Sprite.update(self)
+		src.sprite.Sprite.update(self)
 		tmpimage = self.image
 		if tmpimage is not None:
 			if self.flipped:
