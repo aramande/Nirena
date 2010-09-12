@@ -7,4 +7,3 @@ class Ground(sprite.Sprite):
 		sprite.Sprite.__init__(self)
 		self.rect = pygame.Rect(90,400,50,50)
 		self.image = load_image("player.png")
-		self.force = 0.02

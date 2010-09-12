@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 import pygame
+from settings import *
 class Sprite(pygame.sprite.Sprite):
 	def __init__(self):
 		pygame.sprite.Sprite.__init__(self)
-		self.gravity = 0.02
+		self.gravity = 0.2 * PHYSICS
 	def update(self):
 		pass
 

@@ -3,6 +3,7 @@
 import pygame
 import sprite
 from resources import load_image
+from settings import *
 
 class Player(sprite.Sprite):
 	def __init__(self):
@@ -20,7 +21,6 @@ class Player(sprite.Sprite):
 		self.vely = 0
 		self.accy = 0
 		self.normal = 0
-		self.force = 0
 		self.terminalVelocity = 8
 		self.jumping = False
 		self.fall = True
@@ -67,7 +67,7 @@ class Player(sprite.Sprite):
 			event.key == pygame.K_SPACE or \
 			event.key == pygame.K_z:
 				if not self.jumping:
-					self.accy = -0.4
+					self.accy = -4 * PHYSICS
 					self.fall = True
 			elif event.key == pygame.K_DOWN:
 				pass

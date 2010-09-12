@@ -9,11 +9,7 @@ import nose
 import optparse
 from pygame.locals import *
 from resources import load_image
-
-SCREEN_WIDTH = 640
-SCREEN_HEIGHT = 480
-SCREEN_DEPTH = 32
-FPS = 60
+from settings import *
 
 def rungame():
 	pygame.init()
@@ -32,6 +28,7 @@ def rungame():
 	g_ground = pygame.sprite.GroupSingle(ground.Ground())
 	groups['ground'] = g_ground
 	render.add(g_ground)
+	PHYSICS = 0.1
 	while True:
 		pygame.event.pump()
 		for event in pygame.event.get():
@@ -50,6 +47,9 @@ def rungame():
 		pygame.display.update()
 		clock.tick(FPS)
 		
+def start():
+	rungame()
+	
 p = optparse.OptionParser()
 p.add_option('--test', '-t', action ='store_true', help='run the game through all tests')
 options, arguments = p.parse_args()
