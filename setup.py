@@ -7,7 +7,7 @@ files = ["test/*"]
 
 setup(name = "Project13",
     version = "0.1",
-    description = "Puzzle Adventure Sidescrolling Platformer",
+    description = "Adventure Physics Puzzle Sidescrolling Platformer",
     author = "Aramande",
     author_email = "aramande@hackular.com",
     url = "Hackular.com",
@@ -23,7 +23,7 @@ setup(name = "Project13",
     # package_data = {'src' : files },
     #'runner' is in the root.
     scripts = ["runner"],
-    long_description = """2D adventurer based on puzzles, and the style is a sidescrolling platformer""" 
+    long_description = """2D adventurer based on physics puzzles, and the style is a sidescrolling platformer""" 
     #This next part it for the Cheese Shop, look a little down the page.
     #classifiers = []     
 ) 

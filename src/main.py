@@ -3,12 +3,13 @@
 import sys
 import pygame
 import pygame.mixer
-import src.player
-import src.ground
+import player
+import ground
 import nose
+import optparse
 from pygame.locals import *
-from src.resources import load_image
-from src.settings import *
+from resources import load_image
+from settings import *
 
 def rungame():
 	pygame.init()
@@ -18,13 +19,13 @@ def rungame():
 	#variables
 	groups = {}
 	clock = pygame.time.Clock()
-	hero = pygame.sprite.GroupSingle(src.player.Player())
+	hero = pygame.sprite.GroupSingle(player.Player())
 	hero.sprite.setPosition(100,100)
-	groups['player'] = src.player
+	groups['player'] = player
 	render = pygame.sprite.RenderPlain()
 	render.add(hero)
 	background = load_image("background.jpg")
-	g_ground = pygame.sprite.GroupSingle(src.ground.Ground())
+	g_ground = pygame.sprite.GroupSingle(ground.Ground())
 	groups['ground'] = g_ground
 	render.add(g_ground)
 	PHYSICS = 0.1
@@ -45,3 +46,15 @@ def rungame():
 		render.draw(screen)
 		pygame.display.update()
 		clock.tick(FPS)
+
+	
+p = optparse.OptionParser()
+p.add_option('--test', '-t', action ='store_true', help='run the game through all tests')
+options, arguments = p.parse_args()
+if options.test == True:
+	temp_argv = sys.argv
+	sys.argv = [sys.argv[0]]
+	nose.main()
+	sys.argv = temp_argv
+else:
+	rungame()

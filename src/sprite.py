@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import pygame
-from src.settings import *
+from settings import *
 class Sprite(pygame.sprite.Sprite):
 	def __init__(self):
 		pygame.sprite.Sprite.__init__(self)

@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 
 import pygame
-import src.sprite
-from src.resources import load_image
-from src.settings import *
+import sprite
+from resources import load_image
+from settings import *
 
-class Player(src.sprite.Sprite):
+class Player(sprite.Sprite):
 	def __init__(self):
-		src.sprite.Sprite.__init__(self)
+		sprite.Sprite.__init__(self)
 		self.image = load_image('hero.png')
 		self.rect = self.image.get_rect()
 		screen = pygame.display.get_surface()
@@ -27,7 +27,7 @@ class Player(src.sprite.Sprite):
 		
 	def verticalVelocity(self, a, dt):
 		""" Input current velocity, acceleration and time since 
-			last frame to get a new velocity. 
+			last frame to get a new velocity. Negative or zero time throws ValueError.
 			This function should be moved to some kind of physics engine later. """
 		if dt <= 0:
 			raise ValueError
@@ -41,7 +41,7 @@ class Player(src.sprite.Sprite):
 		return round(v, 2)
 	
 	def update(self, dt):
-		src.sprite.Sprite.update(self)
+		sprite.Sprite.update(self)
 		tmpimage = self.image
 		if tmpimage is not None:
 			if self.flipped:

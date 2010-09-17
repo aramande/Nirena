@@ -1,4 +1,4 @@
-import src.player
+import player
 import unittest
 
 class PlayerStub(player.Player):
@@ -20,10 +20,11 @@ class PlayerTest(unittest.TestCase):
 		
 		#Good values:
 		self.assertEqual(self.p.verticalVelocity(9.80665, 0.5), 4.9)
+		self.assertEqual(self.p.verticalVelocity(-5.0, 7.0), -35.0)
 		self.assertEqual(self.p.verticalVelocity(-10.0+1.0-1.0, 10.0), -100.0)
 		self.assertEqual(self.p.verticalVelocity(1.0-1.0, 10.0), 0.0)
 		
-		#Sprite in motion:
+		#Sprite already in motion:
 		self.p.vely = 1.0;
 		self.assertEqual(self.p.verticalVelocity(-0.4+0.2-0.0, 1.0), 0.8)
 		
@@ -41,7 +42,9 @@ class PlayerTest(unittest.TestCase):
 		
 		#Bad values (Negative or no time):
 		self.assertRaises(ValueError,self.p.verticalVelocity, 1, -1)
+		self.assertRaises(ValueError,self.p.verticalVelocity, 5, -6.2)
 		self.assertRaises(ValueError,self.p.verticalVelocity, 9.80665, 0)
+		
 		self.teardown()
 		
 	def teardown(self):
