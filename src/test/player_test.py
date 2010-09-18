@@ -47,13 +47,6 @@ class PlayerTest(unittest.TestCase):
 		
 		self.teardown()
 		
-	def testSetActiveAnimation(self):
-		self.setup()
-		
-		self.assert(p.setActiveAnimation("idle"))
-		
-		self.teardown()
-		
 	def teardown(self):
 		pass
 	
