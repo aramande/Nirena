@@ -8,7 +8,7 @@ from settings import *
 class Player(sprite.Sprite):
 	def __init__(self):
 		sprite.Sprite.__init__(self)
-		self.idle = sprite.Animation("alucard", 6, 7)
+		self.idle = sprite.Animation("alucard/idle", 6, 7)
 		self.image = self.idle.getFirstImage();
 		self.rect = self.image.get_rect()
 		screen = pygame.display.get_surface()

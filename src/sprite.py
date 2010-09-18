@@ -70,7 +70,7 @@ class Animation:
 		else:
 			self.images = []
 			for i in range(self.nframes):
-				# Loads files in the pattern "imagename_xxx.png", where xxx is a 3-digit number, with the first number being 001.
+				# Loads files in the pattern "character/animation_xxx.png", where xxx is a 3-digit number, with the first number being 001.
 				name = self.imagename + "_%.3d.png" 
 				tmpimage = load_image(name % (i+1))
 				colorkey = tmpimage.get_at((1,1))
