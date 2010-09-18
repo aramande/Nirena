@@ -45,7 +45,6 @@ def rungame():
 		screen.blit(background, (0,0))
 		render.draw(screen)
 		pygame.display.update()
-		pygame.display.flip()
 		clock.tick(FPS)
 
 
