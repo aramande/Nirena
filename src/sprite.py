@@ -63,9 +63,10 @@ class Animation:
 		if self.pause >= self.delay:
 			self.pause = 0
 			self.frame += 1
+			if self.frame == len(self.images)-1:
+				self.looped = True
 			if self.frame >= len(self.images): 
 				#Loop animation on overflow
-				self.looped = True
 				self.frame = 0
 			return self.images[self.frame]
 

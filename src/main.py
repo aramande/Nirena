@@ -41,13 +41,14 @@ def rungame():
 			hero.sprite.processMovement(event)
 			
 		hero.sprite.isCollidingWith(pygame.sprite.spritecollide(hero.sprite, g_ground, False), groups)
+		hero.update(clock.get_time())	
 		screen.blit(background, (0,0))
-		hero.update(clock.get_time())
 		render.draw(screen)
 		pygame.display.update()
+		pygame.display.flip()
 		clock.tick(FPS)
 
-	
+
 p = optparse.OptionParser()
 p.add_option('--test', '-t', action ='store_true', help='run the game through all tests')
 options, arguments = p.parse_args()

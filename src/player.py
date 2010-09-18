@@ -20,7 +20,7 @@ class Player(sprite.Sprite):
 		self.area = screen.get_rect()
 		xoffset = (self.area.right - self.rect.left)/2
 		yoffset = self.area.bottom - self.rect.centery
-		self.direction = 1
+		self.direction = 0
 		self.setPosition(xoffset, yoffset)
 		self.flipped = False
 		self.velx = 0
