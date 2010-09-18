@@ -9,6 +9,7 @@ class Player(sprite.Sprite):
 	def __init__(self):
 		sprite.Sprite.__init__(self)
 		self.animation = {"idle" : sprite.Animation("alucard/idle", 6, 7),
+						  "toidle" : sprite.Animation("alucard/toidle", 6, 7),
 						  "walk" : sprite.Animation("alucard/walk", 6, 15),
 						  "towalk" : sprite.Animation("alucard/towalk", 6, 15)}
 		self.activeAnimation = "idle"
@@ -74,6 +75,7 @@ class Player(sprite.Sprite):
 		if self.activeTransition != "":
 			tmpimage = self.animation[self.activeTransition].getImage() #self.image
 			if self.animation[self.activeTransition].isLoopedOnce():
+				self.animation[self.activeTransition].setUnlooped()
 				self.activeTransition = ""
 		else:
 			tmpimage = self.animation[self.activeAnimation].getImage() #self.image
@@ -114,6 +116,8 @@ class Player(sprite.Sprite):
 				self.velx = 0
 			elif event.key == pygame.K_RIGHT:
 				self.velx = 0
+				self.setActiveTransition("toidle")
+				self.setActiveAnimation("idle")
 			elif event.key == pygame.K_UP:
 				self.accy = 0
 			elif event.key == pygame.K_DOWN:

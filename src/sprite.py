@@ -46,6 +46,9 @@ class Animation:
 		
 	def isLoopedOnce(self):
 		return self.looped
+		
+	def setUnlooped(self):
+		self.looped = False
 
 	def getFirstImage(self):
 		if self.nframes is 1:
