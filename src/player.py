@@ -8,8 +8,12 @@ from settings import *
 class Player(sprite.Sprite):
 	def __init__(self):
 		sprite.Sprite.__init__(self)
-		self.animation = {"idle" : sprite.Animation("alucard/idle", 6, 7)}
-		self.image = self.animation["idle"].getFirstImage();
+		self.animation = {"idle" : sprite.Animation("alucard/idle", 6, 7),
+						  "walk" : sprite.Animation("alucard/walk", 6, 15),
+						  "towalk" : sprite.Animation("alucard/towalk", 6, 15)}
+		self.activeAnimation = "idle"
+		self.activeTransition = ""
+		self.image = self.animation[self.activeAnimation].getFirstImage();
 		self.rect = self.image.get_rect()
 		screen = pygame.display.get_surface()
 		self.area = screen.get_rect()
@@ -26,10 +30,33 @@ class Player(sprite.Sprite):
 		self.jumping = False
 		self.fall = True
 		
+	def setActiveAnimation(self, name):
+		"""
+			Runs directly after the activeTransition has been run.
+			name is the name of the animation within the animation dictionary
+			returns false if the name doesn't exist
+			"""
+		if name in self.animation:
+			self.activeAnimation = name
+			return True
+		return False
+		
+	def setActiveTransition(self, name):
+		"""
+			Transition is a special kind of animation, that happens between animations, and before the activeAnimation.
+			An empty name means no transition will be played.
+			"""
+		if name == "" or name in self.animation:
+			self.activeTransition = name
+			return True
+		return False
+	
 	def verticalVelocity(self, a, dt):
-		""" Input current velocity, acceleration and time since 
+		""" 
+			Input current velocity, acceleration and time since 
 			last frame to get a new velocity. Negative or zero time throws ValueError.
-			This function should be moved to some kind of physics engine later. """
+			This function should be moved to some kind of physics engine later. 
+			"""
 		if dt <= 0:
 			raise ValueError
 		v = self.vely + a * dt
@@ -43,7 +70,13 @@ class Player(sprite.Sprite):
 	
 	def update(self, dt):
 		sprite.Sprite.update(self)
-		tmpimage = self.animation["idle"].getImage() #self.image
+		tmpimage = ""
+		if self.activeTransition != "":
+			tmpimage = self.animation[self.activeTransition].getImage() #self.image
+			if self.animation[self.activeTransition].isLoopedOnce():
+				self.activeTransition = ""
+		else:
+			tmpimage = self.animation[self.activeAnimation].getImage() #self.image
 		if tmpimage is not None:
 			if self.flipped:
 				tmpimage = pygame.transform.flip(tmpimage,1,0)
@@ -64,6 +97,8 @@ class Player(sprite.Sprite):
 			elif event.key == pygame.K_RIGHT or \
 			event.key == pygame.K_d:
 				self.velx = +2
+				self.setActiveTransition("towalk")
+				self.setActiveAnimation("walk")
 				self.flipped = False
 			elif event.key == pygame.K_UP or \
 			event.key == pygame.K_w or \

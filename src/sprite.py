@@ -41,7 +41,11 @@ class Animation:
 		self.delay = delay
 		self.frame = 0
 		self.pause = 0
+		self.looped = False
 		self.initialize()
+		
+	def isLoopedOnce(self):
+		return self.looped
 
 	def getFirstImage(self):
 		if self.nframes is 1:
@@ -58,6 +62,7 @@ class Animation:
 			self.frame += 1
 			if self.frame >= len(self.images): 
 				#Loop animation on overflow
+				self.looped = True
 				self.frame = 0
 			return self.images[self.frame]
 
