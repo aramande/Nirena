@@ -10,7 +10,7 @@ class Player(sprite.Sprite):
 		sprite.Sprite.__init__(self)
 		self.animation = {"idle" : sprite.Animation("alucard/idle", 6, 7),
 						  "toidle" : sprite.Animation("alucard/toidle", 6, 7),
-						  "walk" : sprite.Animation("alucard/walk", 6, 15),
+						  "walk" : sprite.Animation("alucard/walk", 6, 16),
 						  "towalk" : sprite.Animation("alucard/towalk", 6, 15)}
 		self.activeAnimation = "idle"
 		self.activeTransition = ""
