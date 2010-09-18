@@ -8,8 +8,8 @@ from settings import *
 class Player(sprite.Sprite):
 	def __init__(self):
 		sprite.Sprite.__init__(self)
-		self.idle = sprite.Animation("alucard/idle", 6, 7)
-		self.image = self.idle.getFirstImage();
+		self.animation = {"idle" : sprite.Animation("alucard/idle", 6, 7)}
+		self.image = self.animation["idle"].getFirstImage();
 		self.rect = self.image.get_rect()
 		screen = pygame.display.get_surface()
 		self.area = screen.get_rect()
@@ -43,7 +43,7 @@ class Player(sprite.Sprite):
 	
 	def update(self, dt):
 		sprite.Sprite.update(self)
-		tmpimage = self.idle.getImage() #self.image
+		tmpimage = self.animation["idle"].getImage() #self.image
 		if tmpimage is not None:
 			if self.flipped:
 				tmpimage = pygame.transform.flip(tmpimage,1,0)
@@ -60,9 +60,11 @@ class Player(sprite.Sprite):
 			if event.key == pygame.K_LEFT or \
 			event.key == pygame.K_a:
 				self.velx = -2
+				self.flipped = True
 			elif event.key == pygame.K_RIGHT or \
 			event.key == pygame.K_d:
 				self.velx = +2
+				self.flipped = False
 			elif event.key == pygame.K_UP or \
 			event.key == pygame.K_w or \
 			event.key == pygame.K_SPACE or \
