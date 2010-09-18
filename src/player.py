@@ -8,7 +8,8 @@ from settings import *
 class Player(sprite.Sprite):
 	def __init__(self):
 		sprite.Sprite.__init__(self)
-		self.image = load_image('hero.png')
+		self.idle = sprite.Animation("alucard", 6, 7)
+		self.image = self.idle.getFirstImage();
 		self.rect = self.image.get_rect()
 		screen = pygame.display.get_surface()
 		self.area = screen.get_rect()
@@ -42,7 +43,7 @@ class Player(sprite.Sprite):
 	
 	def update(self, dt):
 		sprite.Sprite.update(self)
-		tmpimage = self.image
+		tmpimage = self.idle.getImage() #self.image
 		if tmpimage is not None:
 			if self.flipped:
 				tmpimage = pygame.transform.flip(tmpimage,1,0)
