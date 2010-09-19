@@ -95,6 +95,8 @@ class Player(sprite.Sprite):
 			if event.key == pygame.K_LEFT or \
 			event.key == pygame.K_a:
 				self.velx = -2
+				self.setActiveTransition("towalk")
+				self.setActiveAnimation("walk")
 				self.flipped = True
 			elif event.key == pygame.K_RIGHT or \
 			event.key == pygame.K_d:
@@ -114,6 +116,8 @@ class Player(sprite.Sprite):
 		if event.type == pygame.KEYUP:
 			if event.key == pygame.K_LEFT:
 				self.velx = 0
+				self.setActiveTransition("toidle")
+				self.setActiveAnimation("idle")
 			elif event.key == pygame.K_RIGHT:
 				self.velx = 0
 				self.setActiveTransition("toidle")
