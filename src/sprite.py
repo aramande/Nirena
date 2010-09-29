@@ -2,6 +2,7 @@
 import pygame
 from settings import *
 from resources import load_image
+
 class Sprite(pygame.sprite.Sprite):
 	def __init__(self):
 		pygame.sprite.Sprite.__init__(self)
@@ -28,6 +29,7 @@ class Sprite(pygame.sprite.Sprite):
 		
 	def getVelocity(self):
 		return self.velx,self.vely
+	
 
 class Animation:
 	def __init__(self,imagename,delay,n):

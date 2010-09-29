@@ -1,5 +1,0 @@
-#!D:\python31\python.exe
-
-from nose import main
-
-main()

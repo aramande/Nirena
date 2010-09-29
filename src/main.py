@@ -16,7 +16,7 @@ def rungame():
 	screen = pygame.display.set_mode((SCREEN_WIDTH,SCREEN_HEIGHT),0,SCREEN_DEPTH)
 	pygame.display.set_caption('Project 13')
 
-	#variables
+#variables
 	groups = {}
 	clock = pygame.time.Clock()
 	hero = pygame.sprite.GroupSingle(player.Player())
@@ -26,9 +26,14 @@ def rungame():
 	render.add(hero)
 	background = load_image("background.jpg")
 	g_ground = pygame.sprite.GroupSingle(ground.Ground())
+	slope = pygame.sprite.GroupSingle(ground.Slope())
 	groups['ground'] = g_ground
+	groups['slope'] = slope
+	render.add(slope)
 	render.add(g_ground)
 	PHYSICS = 0.1
+	
+#mainloop
 	while True:
 		pygame.event.pump()
 		for event in pygame.event.get():
@@ -48,7 +53,7 @@ def rungame():
 		pygame.display.flip()
 		clock.tick(FPS)
 
-
+#testing
 p = optparse.OptionParser()
 p.add_option('--test', '-t', action ='store_true', help='run the game through all tests')
 options, arguments = p.parse_args()

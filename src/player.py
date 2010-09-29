@@ -8,10 +8,12 @@ from settings import *
 class Player(sprite.Sprite):
 	def __init__(self):
 		sprite.Sprite.__init__(self)
-		self.animation = {"idle" : sprite.Animation("alucard/idle", 6, 7),
+		self.animation = {"idle" : sprite.Animation("alucard/idle", 5, 7),
 						  "toidle" : sprite.Animation("alucard/toidle", 6, 7),
-						  "walk" : sprite.Animation("alucard/walk", 6, 16),
-						  "towalk" : sprite.Animation("alucard/towalk", 6, 15)}
+						  "walk" : sprite.Animation("alucard/walk", 4, 16),
+						  "towalk" : sprite.Animation("alucard/towalk", 4, 15),
+						  "jump" : sprite.Animation("alucard/jump", 5, 6),
+						  "jumpd" : sprite.Animation("alucard/jumpd", 3, 4)}
 		self.activeAnimation = "idle"
 		self.activeTransition = ""
 		self.image = self.animation[self.activeAnimation].getFirstImage();
@@ -108,6 +110,10 @@ class Player(sprite.Sprite):
 			event.key == pygame.K_w or \
 			event.key == pygame.K_SPACE or \
 			event.key == pygame.K_z:
+				self.setActiveAnimation("jump")
+				if event.key == pygame.K_RIGHT or \
+				event.key == pygame.K_LEFT:
+					set.selfActiveTransition("jumpd")
 				if not self.jumping:
 					self.accy = -4 * PHYSICS
 					self.fall = True
@@ -126,6 +132,7 @@ class Player(sprite.Sprite):
 				self.accy = 0
 			elif event.key == pygame.K_DOWN:
 				pass
+				
 				
 	def isCollidingWith(self, sprites, groups):
 		self.fall = True
