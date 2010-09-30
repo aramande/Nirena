@@ -1,0 +1,6 @@
+*.pyc
+*~
+repeater.html
+dist
+build
+thumbs.db

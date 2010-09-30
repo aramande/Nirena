@@ -18,17 +18,24 @@ class PlayerTest(unittest.TestCase):
 	def testVerticalVelocity(self):
 		self.setup()
 		
-		#Good values:
 		self.assertEqual(self.p.verticalVelocity(9.80665, 0.5), 4.9)
 		self.assertEqual(self.p.verticalVelocity(-5.0, 7.0), -35.0)
 		self.assertEqual(self.p.verticalVelocity(-10.0+1.0-1.0, 10.0), -100.0)
 		self.assertEqual(self.p.verticalVelocity(1.0-1.0, 10.0), 0.0)
 		
-		#Sprite already in motion:
+		self.teardown()
+	
+	def testSpriteInMotion(self):
+		self.setup()
+		
 		self.p.vely = 1.0;
 		self.assertEqual(self.p.verticalVelocity(-0.4+0.2-0.0, 1.0), 0.8)
 		
-		#Jumping arc:
+		self.teardown()
+		
+	def testJumpingArc(self):
+		self.setup()
+		
 		self.p.vely = 0.0;
 		vely = self.p.verticalVelocity(-0.4+0.02-0.0, 1.0)
 		self.assertEqual(vely, -0.38)
@@ -39,11 +46,13 @@ class PlayerTest(unittest.TestCase):
 			self.assertEqual(vely, round(last + 0.02,2))
 			last += 0.02
 		
+		self.teardown()
 		
-		#Bad values (Negative or no time):
+	def testNegativeTime(self):
+		self.setup()
+		
 		self.assertRaises(ValueError,self.p.verticalVelocity, 1, -1)
 		self.assertRaises(ValueError,self.p.verticalVelocity, 5, -6.2)
-		self.assertRaises(ValueError,self.p.verticalVelocity, 9.80665, 0)
 		
 		self.teardown()
 		
