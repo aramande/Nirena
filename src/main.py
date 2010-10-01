@@ -25,12 +25,16 @@ def rungame():
 	render = pygame.sprite.RenderPlain()
 	render.add(hero)
 	background = load_image("background.jpg")
-	g_ground = pygame.sprite.GroupSingle(ground.Ground())
-	slope = pygame.sprite.GroupSingle(ground.Slope())
+	s_ground = ground.Ground()
+	s_slope = ground.Slope()
+	g_ground = pygame.sprite.GroupSingle(s_ground)
+	g_slope = pygame.sprite.GroupSingle(s_slope)
+	solid_obstacles = pygame.sprite.Group((s_ground, s_slope)) #Do not remove paranthesis 
 	groups['ground'] = g_ground
-	groups['slope'] = slope
-	render.add(slope)
+	groups['slope'] = g_slope
+	groups['solid_obstacles'] = solid_obstacles
 	render.add(g_ground)
+	render.add(g_slope)
 	PHYSICS = 0.1
 	
 #mainloop
@@ -45,7 +49,7 @@ def rungame():
 					sys.exit()
 			hero.sprite.processMovement(event)
 			
-		hero.sprite.isCollidingWith(pygame.sprite.spritecollide(hero.sprite, g_ground, False), groups)
+		hero.sprite.isCollidingWith(pygame.sprite.spritecollide(hero.sprite, solid_obstacles, False), groups)
 		hero.update(clock.get_time())	
 		screen.blit(background, (0,0))
 		render.draw(screen)

@@ -7,6 +7,7 @@ class Sprite(pygame.sprite.Sprite):
 	def __init__(self):
 		pygame.sprite.Sprite.__init__(self)
 		self.gravity = 0.2 * PHYSICS
+		self.hitmask = 0
 	def update(self):
 		pass
 

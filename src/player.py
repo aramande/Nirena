@@ -2,6 +2,7 @@
 
 import pygame
 import sprite
+from ppcollision import *
 from resources import load_image
 from settings import *
 
@@ -20,10 +21,10 @@ class Player(sprite.Sprite):
 		self.rect = self.image.get_rect()
 		screen = pygame.display.get_surface()
 		self.area = screen.get_rect()
-		xoffset = (self.area.right - self.rect.left)/2
-		yoffset = self.area.bottom - self.rect.centery
+		self.x = 100 #(self.area.right - self.rect.left)/2
+		self.y = 50 # self.area.bottom - self.rect.centery
 		self.direction = 0
-		self.setPosition(xoffset, yoffset)
+		self.setPosition(self.x, self.y)
 		self.flipped = False
 		self.velx = 0
 		self.vely = 0
@@ -60,9 +61,10 @@ class Player(sprite.Sprite):
 			last frame to get a new velocity. Negative or zero time throws ValueError.
 			This function should be moved to some kind of physics engine later. 
 			"""
-		if dt <= 0:
+		if dt < 0:
 			raise ValueError
 		v = self.vely + a * dt
+		print(self.vely, a, dt, "=", v)
 		if v > self.terminalVelocity :
 			v = self.terminalVelocity
 		if not self.fall and v > 0 :
@@ -87,12 +89,16 @@ class Player(sprite.Sprite):
 			self.image=tmpimage
 		if(dt <= 0):
 			dt = 0.01
-		self.rect.left += self.velx
+		self.rect = self.image.get_rect()
+		self.x += self.velx
 		self.vely = self.verticalVelocity(self.accy + self.gravity - self.normal, dt)
-		self.rect.top += self.vely 
+		self.y += self.vely 
+		self.setPosition(self.x, self.y)
 		self.accy = 0
 
 	def processMovement(self, event):
+		self.normal = 0
+		self.fall = True
 		if event.type == pygame.KEYDOWN:
 			if event.key == pygame.K_LEFT or \
 			event.key == pygame.K_a:
@@ -135,12 +141,15 @@ class Player(sprite.Sprite):
 				
 				
 	def isCollidingWith(self, sprites, groups):
-		self.fall = True
 		for sprite in sprites:
-			if groups['ground'] in sprite.groups():
-				if(self.vely > 0):
-					self.fall = False
-					self.jumping = False
-					t_x, t_y = self.getPosition()
-					junk, t_y = sprite.getPosition()
-					self.setPosition(t_x, t_y-(self.rect.bottom-self.rect.top-1.0))
+			if groups['solid_obstacles'] in sprite.groups():
+				self.hitmask = get_alpha_hitmask(self.image, self.rect)
+				if check_collision(self, sprite):
+					if(self.vely > 0):
+						self.fall = False
+						self.jumping = False
+						#t_x, t_y = self.getPosition()
+						#junk, t_y = sprite.getPosition()
+						#self.setPosition(t_x, t_y-(self.rect.bottom-self.rect.top-1.0))
+						self.vely = 0
+						self.normal = 0.2 * PHYSICS
