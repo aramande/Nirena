@@ -30,10 +30,10 @@ def rungame():
 	g_ground = pygame.sprite.GroupSingle(s_ground)
 	g_slope = pygame.sprite.GroupSingle(s_slope)
 	solid_obstacles = pygame.sprite.Group((s_ground, s_slope)) #Do not remove paranthesis 
-	groups['ground'] = g_ground
+##	groups['ground'] = g_ground
 	groups['slope'] = g_slope
 	groups['solid_obstacles'] = solid_obstacles
-	render.add(g_ground)
+##	render.add(g_ground)
 	render.add(g_slope)
 	PHYSICS = 0.1
 	
