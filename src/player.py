@@ -64,7 +64,6 @@ class Player(sprite.Sprite):
 		if dt < 0:
 			raise ValueError
 		v = self.vely + a * dt
-		print(self.vely, a, dt, "=", v)
 		if v > self.terminalVelocity :
 			v = self.terminalVelocity
 		if not self.fall and v > 0 :
