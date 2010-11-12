@@ -1,3 +1,0 @@
-- without some kind of result proxy, plugin calls from within a result will NOT
-  get the test wrapper (nose.case.Test) but instead the wrapped test. Among 
-  other things, this breaks the test_id plugin.

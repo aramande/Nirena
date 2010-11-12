@@ -1,4 +1,0 @@
-include runner README
-recursive-include data *
-recursive-include nose *
-recursive-include src *
