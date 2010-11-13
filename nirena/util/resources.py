@@ -2,7 +2,7 @@ import os
 import pygame
 
 def load_image(name):
-	fullname = '../../data/images/'+ name
+	fullname = 'data/images/'+ name
 	try:
 		image = pygame.image.load(fullname)
 		if image.get_alpha() is None:
@@ -15,12 +15,11 @@ def load_image(name):
 	return image
 
 def db_path(name):
-	fullname = '../../data/db/'+ name
+	fullname = 'data/db/'+ name
 	try:
-		database = open(fullname, 'rw')
-	except:
+		database = open(fullname, 'r+')
+	except None as e:
 		print(e)
 		raise SystemExit
-	finally:
-		database.close()
+	database.close()
 	return fullname
