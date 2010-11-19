@@ -1,10 +1,9 @@
-#import run from nirena.game
+#from nirena.game import run
 import os
 import sys
 import unittest
 import discover
 import optparse
-#sys.path.insert(0, os.path.abspath(os.path.curdir))
 import nirena.util.parser
 
 p = optparse.OptionParser()

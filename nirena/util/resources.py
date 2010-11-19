@@ -3,6 +3,7 @@ import pygame
 
 def load_image(name):
 	fullname = 'data/images/'+ name
+	return pygame.image.load(fullname) #### REMOVE THIS LINE TO MAKE SPRITES WORK BETTER LATER
 	try:
 		image = pygame.image.load(fullname)
 		if image.get_alpha() is None:
@@ -23,3 +24,6 @@ def db_path(name):
 		raise SystemExit
 	database.close()
 	return fullname
+		
+def get_class(obj):
+	return obj.__class__.__name__

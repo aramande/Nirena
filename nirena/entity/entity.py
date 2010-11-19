@@ -1,6 +1,5 @@
-def _getClass(obj):
-	return obj.__class__.__name__
-
+from nirena.util.resources import load_image
+from nirena.util.resources import get_class
 class Entity:
 	def __init__(self, sprite, friction, mass, rotation, *rect):
 		"""
@@ -12,30 +11,33 @@ class Entity:
 			raise ValueError("Friction cannot be negative")
 		if mass < 0.0:
 			raise ValueError("Mass cannot be negative")
-		if rect[0] == None or len(rect) == 0:
-			raise ValueError("Rect has to have a value")
+		
+		self.pos = [0,0]
+		self.size = [0,0]
+		self.setSprite(sprite)
+		self.friction = friction
+		self.mass = mass
+		self.setPosition(*rect)
+			
+	def setSprite(self, sprite):
 		if sprite == "" or sprite == None:
 			raise ValueError("Sprite has to have a value")
+		self.sprite = load_image(sprite)
+		self.size[0] = self.sprite.get_rect().width
+		self.size[1] = self.sprite.get_rect().height
+	
+	def setPosition(self, *rect):
 		if len(rect) > 4:
 			raise ValueError("Can't have more than 4 values of rect")
 		if len(rect) == 3:
 			raise ValueError("Can't have 3 values of rect")
-		self.pos = [0,0]
-		self.size = [0,0]
-		if len(rect) == 1 and _getClass(rect[0]) == 'Rect':
-			if rect[0].width < 0 or rect[0].height < 0:
-				raise ValueError("Weight and/or Height cannot be negative")
+			
+		if len(rect) == 1 and get_class(rect[0]) == 'Rect':
 			self.pos[0] = rect[0].left
 			self.pos[1] = rect[0].top
-			self.size[0] = rect[0].width
-			self.size[1] = rect[0].height
-		elif len(rect) == 4:
-			if rect[2] < 0 or rect[2] < 0:
-				raise ValueError("Weight and/or Height cannot be negative")
+		elif len(rect) == 2 or len(rect) == 4:
 			self.pos[0] = rect[0]
 			self.pos[1] = rect[1]
-			self.size[0] = rect[2]
-			self.size[1] = rect[3]
-			
-	def draw():
+	
+	def draw(self):
 		pass
