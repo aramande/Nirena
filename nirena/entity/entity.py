@@ -1,7 +1,6 @@
-from nirena.util.resources import load_image
-from nirena.util.resources import get_class
+from nirena.util.resources import load_image, get_class
 class Entity:
-	def __init__(self, sprite, friction, mass, rotation, *rect):
+	def __init__(self, sprite, friction, *rect):
 		"""
 			Creates an entity with their own sprite and position/size on the screen.
 			rect can either be four floatingpoint numbers, or a pygame.Rect
@@ -9,14 +8,11 @@ class Entity:
 		"""
 		if friction < 0.0:
 			raise ValueError("Friction cannot be negative")
-		if mass < 0.0:
-			raise ValueError("Mass cannot be negative")
 		
 		self.pos = [0,0]
 		self.size = [0,0]
 		self.setSprite(sprite)
 		self.friction = friction
-		self.mass = mass
 		self.setPosition(*rect)
 			
 	def setSprite(self, sprite):
