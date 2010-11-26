@@ -16,7 +16,7 @@ def load_image(name):
 	return image
 
 def db_path(name):
-	fullname = 'data/db/'+ name
+	fullname = 'data/tilesets/'+ name
 	try:
 		database = open(fullname, 'r+')
 	except None as e:

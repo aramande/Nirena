@@ -5,17 +5,25 @@
 		<!-- default entity (id goes up by one for each entity)
 		default will be used for pure background stuff that never will collide with 
 		anything, no matter what layer it's in -->
-		<surface id="0" type="default" image="data\images\mapset\slope.png"/>
+		<surface id="0" type="default" image="mapset/slope.png"/>
 		<!-- animated entity 
-		if a vector is included this type will become collidable, otherwise it's strictly 
-		background stuff. can only have one animation per entity which will always run -->
-		<surface id="1" type="animated" image="data\images\alucard\idle_001.png" 
-		name="alucard/idle" delay="5" frames="7"/>
+		this is strictly background stuff. can only have one animation per entity which will always run -->
+		<surface id="1" type="animated" image="alucard/idle_001.png" 
+		animation="alucard/idle" delay="5" frames="7" />
+		<!-- standable animated entity
+		same as above, except it can be used to make the user collide, 
+		please make sure the image doesn't change size too much as it animates -->		
+		<surface id="2" type="colliani" image="alucard/idle_001.png" 
+		animation="alucard/idle" delay="5" frames="7" friction="4.1" />
 		<!-- static ground (standable entity) 
 		this would be anything belonging to the environment, such as the ground, and walls -->
-		<surface id="2" type="standable" image="data\images\mapset\slope.png">
+		<surface id="3" type="collidable" image="mapset/slope.png" friction="4.1" />
+		<!-- dynamic object (a mix between standable and movable entity) 
+		this would be anything the player could interact with -->
+		<surface id="4" type="item" image="mapset/slope.png" friction="4.1" />
+		<surface id="5" type="friction" image="mapset/slope.png">
 			<!-- these coordinates does not need to be completely accurate, 
-			as long as they are relative to the image but they need to be close to, 
+			as long as they are relative to the image; but they need to be close to, 
 			and preferably cover, the walkable area of the surface.
 			
 			the way I want this to work is, if the player collides with an object 
@@ -24,13 +32,8 @@
 			to calculate how much the player would slip downwards from say.. a slope
  
 			I chose to put friction with each vector, this way an entity can have 
-			different friction forces for different areas of the object-->
-			<vector x1="0" y1="45" x2="100" y2="21" friction="4.1" />
-		</surface>
-		<!-- dynamic object (a mix between standable and movable entity) 
-		this would be anything the player could interact with -->
-		<surface id="3" type="item" image="data\images\mapset\slope.png">
-			<!-- since this entity will be able to rotate and move, all of the sides 
+			different friction forces for different areas of the object
+			since this entity will be able to rotate and move, all of the sides 
 			will be included -->
 			<vector x1="0" y1="45" x2="100" y2="21" friction="4.1" />
 			<vector x1="0" y1="45" x2="0" y2="50" friction="2.4" />
