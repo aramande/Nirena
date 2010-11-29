@@ -8,11 +8,22 @@ import nirena.util.parser
 
 p = optparse.OptionParser()
 p.add_option('--test', '-t', action ='store_true', help='run the game through all tests')
+p.add_option('--version', '-v', action ='store_true', help='print the current version number')
 options, arguments = p.parse_args()
-result = unittest.TestResult()
+version = {}
+version['name'] = "HackularEngine"
+version['tag'] = "Alpha"
+version['major'] = "0"
+version['minor'] = "2"
+version['bugfix'] = "0"
+vnum = " v"+version['major']+"."+version['minor']
+if version['bugfix'] != "":
+	vnum += "."+version['bugfix']
+vstr = version['name']+" "+version['tag']+vnum
 if options.test == True:
 	temp_argv = sys.argv
 	sys.argv = [sys.argv[0]] #fix: Arguments sent along to test-loaders.
+	result = unittest.TestResult()
 	dtl = discover.DiscoveringTestLoader()
 	dtl.discover("nirena/test", "*_test.py").run(result)
 	print "-"*20
@@ -31,5 +42,7 @@ if options.test == True:
 		print "You are awesome!!"
 	print "-"*20
 	sys.argv = temp_argv
+elif options.version == True:
+	print vstr
 #else:
 #	run()
