@@ -1,0 +1,3145 @@
+
+                         ''~``                         
+                        ( o o )                        
++------------------.oooO--(_)--Oooo.------------------+
+|                                                     |
+|                ®-------------------®                |
+|                | I N D I E  L I B  |                |
+|                ®-------------------®                |
+|                    .oooO                            |
+|                    (   )   Oooo.                    |
++---------------------\ (----(   )--------------------+
+                       \_)    ) /                      
+                             (_/                       
+
+
+[Debug.log]: (Friday, 26 de November del 2010)
+
+[18:33:04] [ BEGIN ] -- Creating SDL window --
+                     {
+           [  OK   ]    Window created
+           [ INFO  ]    Mode: Window
+                     }
+[18:33:04] [  END  ] Window OK [Elapsed time = 0.486 seg]
+---------------------------------------------------------------------
+[18:33:04] [ BEGIN ] -- Initializing Direct3D --
+                     {
+           [  OK   ]    Creating D3D object
+           [  OK   ]    Obtaining the adapter
+           [  OK   ]    Creating the device (D3DCREATE_HARDWARE_VERTEXPROCESSING)
+           [ INFO  ]    Video mode: 800 x 600 x 32
+                     }
+[18:33:05] [  END  ] Direct3D OK [Elapsed time = 0.781 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Hardware information --
+                     {
+           [ INFO  ]    Direct3D version: DXSDK November 2007
+           [ INFO  ]    Mark: ?
+           [ INFO  ]    Chip: Direct3D HAL
+           [ INFO  ]    Primitive antialising (D3DRS_ANTIALIASEDLINEENABLE): No
+           [ INFO  ]    Maximum texture size: 4096 x 4096
+           [ INFO  ]    Vertex Shader: 3 . 0 
+           [ INFO  ]    Pixel Shader: 3 . 0
+                     }
+[18:33:05] [  END  ] Hardware Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Initializing LightManager --
+                     {
+           [  OK   ]    Preparing LightManager
+           [  OK   ]    Checking IND_Render
+                     }
+[18:33:05] [  END  ] LightManager OK [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Initializing ImageManager --
+                     {
+           [  OK   ]    Preparing ImageManager
+                     }
+[18:33:05] [  END  ] ImageManager OK [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Initializing SurfaceManager --
+                     {
+           [  OK   ]    Checking IND_Render
+           [  OK   ]    Checking IND_ImageManager
+                     }
+[18:33:05] [  END  ] SurfaceManager OK [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Initializing AnimationManager --
+                     {
+           [  OK   ]    SurfaceManager Ok
+           [  OK   ]    ImageManager Ok
+                     }
+[18:33:05] [  END  ] AnimationManager OK [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Initializing FontManager --
+                     {
+           [  OK   ]    SurfaceManager Ok
+           [  OK   ]    ImageManager Ok
+                     }
+[18:33:05] [  END  ] FontManager OK [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Initializing Entity2dManager --
+                     {
+           [  OK   ]    Preparing Entity2dManager
+           [  OK   ]     Checking IND_Render
+                     }
+[18:33:05] [  END  ] Entity2dManager OK [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Initializing Entity3dManager --
+                     {
+           [  OK   ]    Preparing Entity3dManager
+           [  OK   ]    Checking IND_Render
+                     }
+[18:33:05] [  END  ] Entity3dManager OK [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+           [  OK   ] Checking IND_Render
+[18:33:05] [ BEGIN ] -- Initializing IND_3dMeshManager --
+                     {
+                     }
+[18:33:05] [  END  ] IND_3dMeshManager OK [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\editor\cursor.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 18 x 18
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\editor\cursor.png
+           [ INFO  ]    File name: 3406212
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 18 x 18
+           [ INFO  ]    Block size: 32 x 32
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 14 x 14
+           [ INFO  ]    Not used percentage: 68.3594 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.002 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\editor\cursor.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 3406272
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:05] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\fonts\font_small.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 256 x 256
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.003 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Parsing and loading font --
+                     {
+           [ INFO  ]    File name: resources\fonts\font_small.xml
+[18:33:05] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: resources\fonts\font_small.png
+           [ INFO  ]       File name: 9891136
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 256 x 256
+           [ INFO  ]       Block size: 256 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 0 x 0
+           [ INFO  ]       Not used percentage: 0 %
+                        }
+[18:33:05] [  END  ]    Surface created [Elapsed time = 0 seg]
+                     }
+[18:33:05] [  END  ] Font parsed and loaded [Elapsed time = 0.002 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\fonts\font_small.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 3406556
+           [ INFO  ]    Layer: 14
+                     }
+[18:33:05] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\black.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 32 x 32
+           [ INFO  ]    Bpp: 24
+           [ INFO  ]    Fomart: IND_RGB
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\black.png
+           [ INFO  ]    File name: 10989240
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 32 x 32
+           [ INFO  ]    Block size: 32 x 32
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\black.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\tile-rock-0001.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 128 x 128
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.002 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\tile-rock-0001.png
+           [ INFO  ]    File name: 11083104
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 128 x 128
+           [ INFO  ]    Block size: 128 x 128
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\tile-rock-0001.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\tile-rock-0004.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 128 x 128
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.002 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\tile-rock-0004.png
+           [ INFO  ]    File name: 11083176
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 128 x 128
+           [ INFO  ]    Block size: 128 x 128
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\tile-rock-0004.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\tile-rock-0002.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 128 x 128
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.002 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\tile-rock-0002.png
+           [ INFO  ]    File name: 11083248
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 128 x 128
+           [ INFO  ]    Block size: 128 x 128
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\tile-rock-0002.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\tile-rock-0003.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 128 x 128
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.002 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\tile-rock-0003.png
+           [ INFO  ]    File name: 11083320
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 128 x 128
+           [ INFO  ]    Block size: 128 x 128
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\tile-rock-0003.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-rock-rep-0002.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 512 x 512
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.027 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\bg-rock-rep-0002.png
+           [ INFO  ]    File name: 11083392
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 512 x 512
+           [ INFO  ]    Block size: 512 x 512
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.003 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-rock-rep-0002.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-rock-rep-0003.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 512 x 512
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.03 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\bg-rock-rep-0003.png
+           [ INFO  ]    File name: 11083464
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 512 x 512
+           [ INFO  ]    Block size: 512 x 512
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.004 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-rock-rep-0003.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-rock-0001.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 512 x 512
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.025 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\bg-rock-0001.png
+           [ INFO  ]    File name: 11083536
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 512 x 512
+           [ INFO  ]    Block size: 512 x 512
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.004 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-rock-0001.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-rock-0002.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 512 x 512
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.02 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\bg-rock-0002.png
+           [ INFO  ]    File name: 11083608
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 512 x 512
+           [ INFO  ]    Block size: 512 x 512
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.004 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-rock-0002.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-rock-0003.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 512 x 512
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.023 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\bg-rock-0003.png
+           [ INFO  ]    File name: 11083680
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 512 x 512
+           [ INFO  ]    Block size: 512 x 512
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.003 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-rock-0003.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-rock-0004.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 512 x 512
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.022 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\bg-rock-0004.png
+           [ INFO  ]    File name: 11083816
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 512 x 512
+           [ INFO  ]    Block size: 512 x 512
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.004 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-rock-0004.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-rock-0005.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 512 x 512
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.022 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\bg-rock-0005.png
+           [ INFO  ]    File name: 11083888
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 512 x 512
+           [ INFO  ]    Block size: 512 x 512
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.003 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-rock-0005.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-rock-0006.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 256 x 256
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.007 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\bg-rock-0006.png
+           [ INFO  ]    File name: 11083960
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 256 x 256
+           [ INFO  ]    Block size: 256 x 256
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-rock-0006.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-rock-0018.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 512 x 512
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.021 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\bg-rock-0018.png
+           [ INFO  ]    File name: 11084032
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 512 x 512
+           [ INFO  ]    Block size: 512 x 512
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.004 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-rock-0018.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-rock-0019.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 512 x 512
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.025 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\bg-rock-0019.png
+           [ INFO  ]    File name: 11084192
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 512 x 512
+           [ INFO  ]    Block size: 512 x 512
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.004 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-rock-0019.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-rock-0024.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 256 x 256
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.006 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\bg-rock-0024.png
+           [ INFO  ]    File name: 11084264
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 256 x 256
+           [ INFO  ]    Block size: 256 x 256
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-rock-0024.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-rock-0025.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 256 x 256
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.004 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\bg-rock-0025.png
+           [ INFO  ]    File name: 11084336
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 256 x 256
+           [ INFO  ]    Block size: 256 x 256
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-rock-0025.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\forest-bg-rock-0005.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 512 x 512
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.02 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\forest-bg-rock-0005.png
+           [ INFO  ]    File name: 11084408
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 512 x 512
+           [ INFO  ]    Block size: 512 x 512
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.003 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\forest-bg-rock-0005.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\grass-bed-0001.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 256 x 256
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.005 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\grass-bed-0001.png
+           [ INFO  ]    File name: 11084480
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 256 x 256
+           [ INFO  ]    Block size: 256 x 256
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\grass-bed-0001.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\grass-rock-0001.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 256 x 256
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.007 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\grass-rock-0001.png
+           [ INFO  ]    File name: 11084552
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 256 x 256
+           [ INFO  ]    Block size: 256 x 256
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\grass-rock-0001.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\plant-0006.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 128 x 128
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\plant-0006.png
+           [ INFO  ]    File name: 11084104
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 128 x 128
+           [ INFO  ]    Block size: 128 x 128
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\plant-0006.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\plant-0001.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 128 x 128
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\plant-0001.png
+           [ INFO  ]    File name: 11084744
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 128 x 128
+           [ INFO  ]    Block size: 128 x 128
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\plant-0001.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\plant-0002.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 128 x 128
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\plant-0002.png
+           [ INFO  ]    File name: 11084816
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 128 x 128
+           [ INFO  ]    Block size: 128 x 128
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\plant-0002.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\plant-0003.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 128 x 128
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\plant-0003.png
+           [ INFO  ]    File name: 11084888
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 128 x 128
+           [ INFO  ]    Block size: 128 x 128
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\plant-0003.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\plant-0004.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 128 x 128
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.002 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\plant-0004.png
+           [ INFO  ]    File name: 11084960
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 128 x 128
+           [ INFO  ]    Block size: 128 x 128
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\plant-0004.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\plant-0005.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 128 x 128
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\plant-0005.png
+           [ INFO  ]    File name: 11085032
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 128 x 128
+           [ INFO  ]    Block size: 128 x 128
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\plant-0005.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\testbed-03.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 512 x 512
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.02 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\testbed-03.png
+           [ INFO  ]    File name: 11085104
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 512 x 512
+           [ INFO  ]    Block size: 512 x 512
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.004 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\testbed-03.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\testbed-01.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 512 x 512
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.023 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\testbed-01.png
+           [ INFO  ]    File name: 11085176
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 512 x 512
+           [ INFO  ]    Block size: 512 x 512
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.004 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\testbed-01.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\testbed-02.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 256 x 256
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.006 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\testbed-02.png
+           [ INFO  ]    File name: 11085248
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 256 x 256
+           [ INFO  ]    Block size: 256 x 256
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\testbed-02.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\cathedral-pillar-0001.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 128 x 512
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.006 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\cathedral-pillar-0001.png
+           [ INFO  ]    File name: 11084624
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 128 x 512
+           [ INFO  ]    Block size: 128 x 512
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\cathedral-pillar-0001.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\memory-crystal-0001.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 256 x 256
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.005 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\memory-crystal-0001.png
+           [ INFO  ]    File name: 11085496
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 256 x 256
+           [ INFO  ]    Block size: 256 x 256
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\memory-crystal-0001.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\pot-0001.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 128 x 128
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\pot-0001.png
+           [ INFO  ]    File name: 11085568
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 128 x 128
+           [ INFO  ]    Block size: 128 x 128
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\pot-0001.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\forest-rock-0002.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 128 x 128
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.003 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\forest-rock-0002.png
+           [ INFO  ]    File name: 11085640
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 128 x 128
+           [ INFO  ]    Block size: 128 x 128
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\forest-rock-0002.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\plant-0009.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 128 x 256
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.002 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\plant-0009.png
+           [ INFO  ]    File name: 11085712
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 128 x 256
+           [ INFO  ]    Block size: 128 x 256
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\plant-0009.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\plant-0010.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 128 x 256
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.003 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\plant-0010.png
+           [ INFO  ]    File name: 11085784
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 128 x 256
+           [ INFO  ]    Block size: 128 x 256
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\plant-0010.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\plant-0014.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 256 x 256
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.006 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\plant-0014.png
+           [ INFO  ]    File name: 11085856
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 256 x 256
+           [ INFO  ]    Block size: 256 x 256
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\plant-0014.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\grass-tile-0001.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 128 x 128
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.003 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\grass-tile-0001.png
+           [ INFO  ]    File name: 11085928
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 128 x 128
+           [ INFO  ]    Block size: 128 x 128
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\grass-tile-0001.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\plant-0011.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 512 x 512
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.016 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\plant-0011.png
+           [ INFO  ]    File name: 11086000
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 512 x 512
+           [ INFO  ]    Block size: 512 x 512
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.004 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\plant-0011.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-light-0003.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 256 x 256
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.006 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\bg-light-0003.png
+           [ INFO  ]    File name: 11086072
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 256 x 256
+           [ INFO  ]    Block size: 256 x 256
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-light-0003.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0.002 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-light-0001.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 256 x 512
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.008 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\bg-light-0001.png
+           [ INFO  ]    File name: 11086144
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 256 x 512
+           [ INFO  ]    Block size: 256 x 512
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-light-0001.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-light-0002.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 256 x 512
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.007 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\bg-light-0002.png
+           [ INFO  ]    File name: 11086216
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 256 x 512
+           [ INFO  ]    Block size: 256 x 512
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\bg-light-0002.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\darkness-0002.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 256 x 256
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.004 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\darkness-0002.png
+           [ INFO  ]    File name: 11086288
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 256 x 256
+           [ INFO  ]    Block size: 256 x 256
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\darkness-0002.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\darkness-0003.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 128 x 512
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.002 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\darkness-0003.png
+           [ INFO  ]    File name: 11086360
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 128 x 512
+           [ INFO  ]    Block size: 128 x 512
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\darkness-0003.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\darkness-0004.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 128 x 512
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.003 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\darkness-0004.png
+           [ INFO  ]    File name: 11085320
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 128 x 512
+           [ INFO  ]    Block size: 128 x 512
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\darkness-0004.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\darkness-0001.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 256 x 256
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.003 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\darkness-0001.png
+           [ INFO  ]    File name: 11085392
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 256 x 256
+           [ INFO  ]    Block size: 256 x 256
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\darkness-0001.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\dark-full.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 256 x 256
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.003 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\dark-full.png
+           [ INFO  ]    File name: 11086696
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 256 x 256
+           [ INFO  ]    Block size: 256 x 256
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\dark-full.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\dark-little.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 256 x 256
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.002 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\dark-little.png
+           [ INFO  ]    File name: 11086768
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 256 x 256
+           [ INFO  ]    Block size: 256 x 256
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\dark-little.png
+                     }
+[18:33:05] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\dark-partial.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 256 x 256
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:05] [  END  ] Image loaded [Elapsed time = 0.003 seg]
+---------------------------------------------------------------------
+[18:33:05] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: resources\images\set1\dark-partial.png
+           [ INFO  ]    File name: 11086840
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 256 x 256
+           [ INFO  ]    Block size: 256 x 256
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 0 x 0
+           [ INFO  ]    Not used percentage: 0 %
+                     }
+[18:33:05] [  END  ] Surface created [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: resources\images\set1\dark-partial.png
+                     }
+[18:33:06] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11086916
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11087188
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11087460
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11087732
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11088004
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11088276
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11088548
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11088820
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11089092
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11089364
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11089636
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11089908
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11090180
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11090452
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11090724
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11090996
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11091268
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11091540
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11091812
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11092084
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11092356
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11092628
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11092900
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11093172
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11093444
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11093716
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11093988
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11094260
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11094532
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11094804
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11095076
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11095348
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11095620
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11095892
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11096164
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11096436
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11096708
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11096980
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11097252
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11097524
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11097796
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11098068
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11098340
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11098612
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11098884
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11099156
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11099428
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:06] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11099700
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:06] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 10989240
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11083104
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11083176
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11083248
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11083320
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11083392
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11083464
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11083536
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11083608
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11083680
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11083816
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11083888
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11083960
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11084032
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11084192
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11084264
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11084336
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11084408
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11084480
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11084552
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11084104
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11084744
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11084816
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11084888
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11084960
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11085032
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11085104
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11085176
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11085248
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11084624
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11085496
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11085568
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11085640
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11085712
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11085784
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11085856
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11085928
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11086000
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11086072
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11086144
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11086216
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11086288
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11086360
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11085320
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11085392
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11086696
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11086768
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11086840
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: mapset/slope.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 100 x 50
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:21] [  END  ] Image loaded [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: mapset/slope.png
+           [ INFO  ]    File name: 11086696
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 100 x 50
+           [ INFO  ]    Block size: 128 x 64
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 28 x 14
+           [ INFO  ]    Not used percentage: 38.9648 %
+                     }
+[18:33:21] [  END  ] Surface created [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: mapset/slope.png
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: alucard/idle_001.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 24 x 48
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:21] [  END  ] Image loaded [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: alucard/idle_001.png
+           [ INFO  ]    File name: 11080864
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 24 x 48
+           [ INFO  ]    Block size: 32 x 64
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 8 x 16
+           [ INFO  ]    Not used percentage: 43.75 %
+                     }
+[18:33:21] [  END  ] Surface created [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: alucard/idle_001.png
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: alucard/idle_001.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 24 x 48
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:21] [  END  ] Image loaded [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: alucard/idle_001.png
+           [ INFO  ]    File name: 11080936
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 24 x 48
+           [ INFO  ]    Block size: 32 x 64
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 8 x 16
+           [ INFO  ]    Not used percentage: 43.75 %
+                     }
+[18:33:21] [  END  ] Surface created [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: alucard/idle_001.png
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: mapset/slope.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 100 x 50
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:21] [  END  ] Image loaded [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: mapset/slope.png
+           [ INFO  ]    File name: 11081008
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 100 x 50
+           [ INFO  ]    Block size: 128 x 64
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 28 x 14
+           [ INFO  ]    Not used percentage: 38.9648 %
+                     }
+[18:33:21] [  END  ] Surface created [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: mapset/slope.png
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: mapset/slope.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 100 x 50
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:21] [  END  ] Image loaded [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: mapset/slope.png
+           [ INFO  ]    File name: 11081080
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 100 x 50
+           [ INFO  ]    Block size: 128 x 64
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 28 x 14
+           [ INFO  ]    Not used percentage: 38.9648 %
+                     }
+[18:33:21] [  END  ] Surface created [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: mapset/slope.png
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Loading Image --
+                     {
+           [ INFO  ]    File name: mapset/slope.png
+           [ INFO  ]    Extension: png
+           [ INFO  ]    Size: 100 x 50
+           [ INFO  ]    Bpp: 32
+           [ INFO  ]    Fomart: IND_RGBA
+                     }
+[18:33:21] [  END  ] Image loaded [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Creating surface --
+                     {
+           [ INFO  ]    From image: mapset/slope.png
+           [ INFO  ]    File name: 11081152
+           [ INFO  ]    Type: IND_ALPHA
+           [ INFO  ]    Quality: IND_32
+           [ INFO  ]    Image size: 100 x 50
+           [ INFO  ]    Block size: 128 x 64
+           [ INFO  ]    Number of blocks: 1 x 1
+           [ INFO  ]    Spare (Right | Down): 28 x 14
+           [ INFO  ]    Not used percentage: 38.9648 %
+                     }
+[18:33:21] [  END  ] Surface created [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing image --
+                     {
+           [ INFO  ]    File name: mapset/slope.png
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11086916
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11087188
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11087460
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11087732
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11088004
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11088276
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11088548
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11088820
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11089092
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11089364
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11089636
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11089908
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11090180
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11090452
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11090724
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11090996
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11091268
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11091540
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11091812
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11092084
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11092356
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11092628
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11092900
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11093172
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11093444
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11093716
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11093988
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11094260
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11094532
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11094804
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11095076
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11095348
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11095620
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11095892
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11096164
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11096436
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11096708
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11096980
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11097252
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11097524
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11097796
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11098068
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11098340
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11098612
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11098884
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11099156
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11099428
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11099700
+                     }
+[18:33:21] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11081228
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:21] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11081500
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:21] [  END  ] 2d entity added [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11081772
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:21] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11082044
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:21] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11082316
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:21] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:21] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11082588
+           [ INFO  ]    Layer: 13
+                     }
+[18:33:21] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:24] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11085496
+           [ INFO  ]    Layer: 3
+                     }
+[18:33:24] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:39] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11085784
+           [ INFO  ]    Layer: 3
+                     }
+[18:33:39] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:33:58] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11086072
+           [ INFO  ]    Layer: 3
+                     }
+[18:33:58] [  END  ] 2d entity added [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:34:10] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11082872
+           [ INFO  ]    Layer: 3
+                     }
+[18:34:10] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:35:22] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11083160
+           [ INFO  ]    Layer: 4
+                     }
+[18:35:22] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:35:37] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11083448
+           [ INFO  ]    Layer: 6
+                     }
+[18:35:37] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:35:41] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11083736
+           [ INFO  ]    Layer: 5
+                     }
+[18:35:41] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:36:08] [ BEGIN ] -- Finalizing the window --
+                     {
+                     }
+[18:36:08] [  END  ] Window finalized [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:36:08] [ BEGIN ] -- Creating SDL window --
+                     {
+           [  OK   ]    Window created
+           [ INFO  ]    Mode: Window
+                     }
+[18:36:08] [  END  ] Window OK [Elapsed time = 0.119 seg]
+---------------------------------------------------------------------
+[18:36:08] [ BEGIN ] -- Reseting Direct3D --
+                     {
+           [  OK   ]    Obtaining the adapter
+           [ INFO  ]    Video mode: 640 x 480 x 32
+                     }
+[18:36:08] [  END  ] Direct3D reseted [Elapsed time = 0.428 seg]
+---------------------------------------------------------------------
+[18:36:11] [ BEGIN ] -- Finalizing the window --
+                     {
+                     }
+[18:36:11] [  END  ] Window finalized [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:36:11] [ BEGIN ] -- Creating SDL window --
+                     {
+           [  OK   ]    Window created
+           [ INFO  ]    Mode: Window
+                     }
+[18:36:11] [  END  ] Window OK [Elapsed time = 0.053 seg]
+---------------------------------------------------------------------
+[18:36:11] [ BEGIN ] -- Reseting Direct3D --
+                     {
+           [  OK   ]    Obtaining the adapter
+           [ INFO  ]    Video mode: 800 x 600 x 32
+                     }
+[18:36:12] [  END  ] Direct3D reseted [Elapsed time = 0.278 seg]
+---------------------------------------------------------------------
+[18:36:12] [ BEGIN ] -- Finalizing the window --
+                     {
+                     }
+[18:36:12] [  END  ] Window finalized [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:36:12] [ BEGIN ] -- Creating SDL window --
+                     {
+           [  OK   ]    Window created
+           [ INFO  ]    Mode: Window
+                     }
+[18:36:12] [  END  ] Window OK [Elapsed time = 0.068 seg]
+---------------------------------------------------------------------
+[18:36:12] [ BEGIN ] -- Reseting Direct3D --
+                     {
+           [  OK   ]    Obtaining the adapter
+           [ INFO  ]    Video mode: 1024 x 768 x 32
+                     }
+[18:36:13] [  END  ] Direct3D reseted [Elapsed time = 0.369 seg]
+---------------------------------------------------------------------
+[18:36:34] [ BEGIN ] -- Adding 2d entity --
+                     {
+           [ INFO  ]    Name: 11084024
+           [ INFO  ]    Layer: 5
+                     }
+[18:36:34] [  END  ] 2d entity added [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:26] [ BEGIN ] -- Finalizing the window --
+                     {
+                     }
+[18:40:26] [  END  ] Window finalized [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:26] [ BEGIN ] -- Creating SDL window --
+                     {
+           [  OK   ]    Window created
+           [ INFO  ]    Mode: Window
+                     }
+[18:40:26] [  END  ] Window OK [Elapsed time = 0.085 seg]
+---------------------------------------------------------------------
+[18:40:26] [ BEGIN ] -- Reseting Direct3D --
+                     {
+           [  OK   ]    Obtaining the adapter
+           [ INFO  ]    Video mode: 800 x 600 x 32
+                     }
+[18:40:26] [  END  ] Direct3D reseted [Elapsed time = 0.37 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11081228
+                     }
+[18:40:28] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11081500
+                     }
+[18:40:28] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11081772
+                     }
+[18:40:28] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11082044
+                     }
+[18:40:28] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11082316
+                     }
+[18:40:28] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11082588
+                     }
+[18:40:28] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11086696
+                     }
+[18:40:28] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11080864
+                     }
+[18:40:28] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11080936
+                     }
+[18:40:28] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11081008
+                     }
+[18:40:28] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11081080
+                     }
+[18:40:28] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing surface --
+                     {
+           [ INFO  ]    Name: 11081152
+                     }
+[18:40:28] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11085496
+                     }
+[18:40:28] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11085496
+                     }
+[18:40:28] [  END  ] Entity not found [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11085784
+                     }
+[18:40:28] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11085784
+                     }
+[18:40:28] [  END  ] Entity not found [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11086072
+                     }
+[18:40:28] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11086072
+                     }
+[18:40:28] [  END  ] Entity not found [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11082872
+                     }
+[18:40:28] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11082872
+                     }
+[18:40:28] [  END  ] Entity not found [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11083160
+                     }
+[18:40:28] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11083160
+                     }
+[18:40:28] [  END  ] Entity not found [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11083448
+                     }
+[18:40:28] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11083448
+                     }
+[18:40:28] [  END  ] Entity not found [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11083736
+                     }
+[18:40:28] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11083736
+                     }
+[18:40:28] [  END  ] Entity not found [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11084024
+                     }
+[18:40:28] [  END  ] Ok [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Freeing 2d entity --
+                     {
+           [ INFO  ]    Name: 11084024
+                     }
+[18:40:28] [  END  ] Entity not found [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Finalizing IND_3dMeshManager --
+                     {
+[18:40:28] [ BEGIN ]    -- Freeing 3d Meshes --
+                        {
+                        }
+[18:40:28] [  END  ]    3d meshes freed [Elapsed time = 0 seg]
+                     }
+[18:40:28] [  END  ] IND_3dMeshManager finalized [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Finalizing Entity2dManager --
+                     {
+[18:40:28] [ BEGIN ]    -- Freeing 2d entities --
+                        {
+           [ INFO  ]       Freeing 2d entity: 3406272
+           [ INFO  ]       Freeing 2d entity: 3406556
+                        }
+[18:40:28] [  END  ]    Entities freed [Elapsed time = 0 seg]
+                     }
+[18:40:28] [  END  ] IND_Entity2dManager finalized [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Finalizing Entity3dManager --
+                     {
+[18:40:28] [ BEGIN ]    -- Freeing 3d entities --
+                        {
+                        }
+[18:40:28] [  END  ]    3d entities freed [Elapsed time = 0 seg]
+                     }
+[18:40:28] [  END  ] Entity3dManager finalized [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Finalizing FontManager --
+                     {
+[18:40:28] [ BEGIN ]    -- Freeing fonts --
+                        {
+           [ INFO  ]       Freeing font: resources\fonts\font_small.xml
+[18:40:28] [ BEGIN ]       -- Freeing surface --
+                           {
+           [ INFO  ]          Name: 9891136
+                           }
+[18:40:28] [  END  ]       Ok [Elapsed time = 0 seg]
+                        }
+[18:40:28] [  END  ]    Fonts freed [Elapsed time = 0 seg]
+                     }
+[18:40:28] [  END  ] FontManager finalized [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Finalizing AnimationManager --
+                     {
+[18:40:28] [ BEGIN ]    -- Freeing animations --
+                        {
+                        }
+[18:40:28] [  END  ]    Animations freed [Elapsed time = 0 seg]
+                     }
+[18:40:28] [  END  ] AnimationManager finalized [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Finalizing SurfaceManager --
+                     {
+[18:40:28] [ BEGIN ]    -- Freeing surfaces --
+                        {
+           [ INFO  ]       Freeing surface: 3406212
+                        }
+[18:40:28] [  END  ]    Surfaces freed [Elapsed time = 0.001 seg]
+                     }
+[18:40:28] [  END  ] IND_SurfaceManager finalized [Elapsed time = 0.001 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Finalizing ImageManager --
+                     {
+[18:40:28] [ BEGIN ]    -- Freeing images --
+                        {
+                        }
+[18:40:28] [  END  ]    Images freed [Elapsed time = 0 seg]
+                     }
+[18:40:28] [  END  ] ImageManager finalized [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Finalizing LightManager --
+                     {
+[18:40:28] [ BEGIN ]    -- Freeing lights --
+                        {
+                        }
+[18:40:28] [  END  ]    Lights freed [Elapsed time = 0 seg]
+                     }
+[18:40:28] [  END  ] LightManager finalized [Elapsed time = 0 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Finalizing Direct3D --
+                     {
+           [  OK   ]    Finalizing the Device
+           [  OK   ]    Finalizing D3D object
+                     }
+[18:40:28] [  END  ] Direct3D finalized  [Elapsed time = 0.005 seg]
+---------------------------------------------------------------------
+[18:40:28] [ BEGIN ] -- Finalizing the window --
+                     {
+                     }
+[18:40:28] [  END  ] Window finalized [Elapsed time = 0 seg]
+---------------------------------------------------------------------

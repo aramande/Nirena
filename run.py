@@ -1,17 +1,18 @@
+#!/usr/bin/env python
 #from nirena.game import run
 import os
 import sys
 import unittest
-import discover
 import optparse
 import nirena.util.parser
+from discover import discover
 
 p = optparse.OptionParser()
 p.add_option('--test', '-t', action ='store_true', help='run the game through all tests')
 p.add_option('--version', '-v', action ='store_true', help='print the current version number')
 options, arguments = p.parse_args()
 version = {}
-version['name'] = "HackularEngine"
+version['name'] = "Nirena"
 version['tag'] = "Alpha"
 version['major'] = "0"
 version['minor'] = "2"

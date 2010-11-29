@@ -6,18 +6,11 @@ class ParserTest(unittest.TestCase):
 	def setUp(self):
 		unittest.TestCase.setUp(self)
 		
-	def testGetObject(self):
-		#Database specific test. 
-		#Change this if the database changes.
-		self.assertEqual([1, "player.png", 10.0, 10.0, 0.0], getObject(1))
-		
-	def testNegativeObject(self):
-		self.assertEqual(None, getObject(-1))
-	
-	def testNonExistantObject(self):
-		#Database specific test. 
-		#Change this if the database changes.
-		self.assertEqual(None, getObject(123874))
-		
+	def testLoadEntities(self):
+		self.assertEqual([0,0], loadEntities("examples.xml")[2].pos)
+
+	def testLoadEntities2(self):
+		self.assertEqual([24,48], loadEntities("examples.xml")[2].size)
+
 	def tearDown(self):
 		unittest.TestCase.tearDown(self)

@@ -1,0 +1,12 @@
+del *.lib
+del *.obj
+del *.idb
+del *.pdb
+del *.exp
+del *.htm
+del *.dep
+del *.manifest
+del *.log
+cd ..
+del *.ncb
+del *.user
