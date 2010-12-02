@@ -1,5 +1,5 @@
-from nirena.game.world import World
-from nirena.entity.entity import Entity
+from nirena.world import World
+from nirena.entity import Entity
 import unittest
 
 class EntityStub(Entity):

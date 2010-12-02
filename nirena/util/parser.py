@@ -1,9 +1,11 @@
 from nirena.util.resources import db_path
-from nirena.entity.entity import Entity
-#from nirena.game.world import World
+from nirena.entity import Entity
+from nirena.world import World
 from xml.sax import make_parser, handler
 
 class XMLReader(handler.ContentHandler):
+	"""Please don't use this reader unless you know what you're 
+	doing, use the global functions down below instead"""
 	def __init__(self):
 		self._surface = []
 		self._vector = []

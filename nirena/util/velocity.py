@@ -5,7 +5,7 @@ from nirena.util.direction import Direction
 import math
 
 class Velocity:
-	def __init__(self, dist, degree = Direction(0.0)):
+	def __init__(self, dist=0.0, degree=Direction(0.0)):
 		if dist == None or degree == None:
 			raise TypeError("Velocity does not accept None values")
 		
@@ -25,6 +25,17 @@ class Velocity:
 		v = self.toVector()
 		w = other.toVector()
 		return Velocity(v-w)
+		
+	def getNextPosition(self, pos, delta):
+		"""
+		@param  pos  Last known position
+		@param  delta  Time since last frame, in milliseconds
+		"""
+		dist = self._dist * delta
+		x = dist * math.cos(self._toRad(self._degree))
+		y = dist * math.sin(self._toRad(self._degree))
+		
+		return pos + Point(x, y)
 
 	def getDistance(self):
 		return self._dist

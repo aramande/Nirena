@@ -1,4 +1,4 @@
-from nirena.entity.entity import Entity
+from nirena.entity import Entity
 from nirena.util.resources import load_image
 
 class World:
@@ -10,10 +10,14 @@ class World:
 		self.entities = []
 		self.addEntity(entities, positions)
 		
-	def getEntitiesWithin(*rect):
+	def getEntitiesWithin(point=None, size=None):
 		"""
-			Gets all entities that are positioned within the rect position and size.
-			To be implemented.
+		Gets all entities that are positioned within the rect position and size.
+		Defaults to everything in the world.
+		To be implemented.
+		
+		@param  point  Expects a point, or two digits standing for x and y
+		@param  size  Expects two digits, signifying width and height
 		"""
 		return self.entities
 		

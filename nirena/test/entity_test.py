@@ -1,4 +1,4 @@
-from nirena.entity.entity import Entity
+from nirena.entity import Entity
 from pygame import Rect
 import unittest
 
