@@ -26,4 +26,7 @@ def db_path(name):
 	return fullname
 		
 def get_class(obj):
+	"""
+	@deprecated: DuckTyping rocks! <3 """
+	raise DeprecationWarning("Using deprecated function get_class(obj), use DuckTyping instead.")
 	return obj.__class__.__name__

@@ -7,29 +7,29 @@ import math
 class Velocity:
 	def __init__(self, dist=0.0, degree=Direction(0.0)):
 		if dist == None or degree == None:
-			raise TypeError("Velocity does not accept None values")
+			raise TypeError("Velocity does not accept None values, please use the defaults instead")
 		
 		self._dist = dist
 		self._degree = degree
 				
 	def __add__(self, other):
 		if other == None:
-			raise ValueError("The other point need to have a value")
+			raise ValueError("The other point needs to have a value")
 		v = self.toVector()
 		w = other.toVector()
 		return Velocity(v+w)
 		
 	def __sub__(self, other):
 		if other == None:
-			raise ValueError("The other point need to have a value")
+			raise ValueError("The other point needs to have a value")
 		v = self.toVector()
 		w = other.toVector()
 		return Velocity(v-w)
 		
 	def getNextPosition(self, pos, delta):
 		"""
-		@param  pos  Last known position
-		@param  delta  Time since last frame, in milliseconds
+		@param pos: Last known position
+		@param delta: Time since last frame, in milliseconds
 		"""
 		dist = self._dist * delta
 		x = dist * math.cos(self._toRad(self._degree))

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>nirena.event.keyboard</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="nirena-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="nirena-module.html">Package&nbsp;nirena</a> ::
+        <a href="nirena.event-module.html">Package&nbsp;event</a> ::
+        Module&nbsp;keyboard
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="nirena.event.keyboard-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="nirena.event.keyboard-module.html">Module nirena.event.keyboard</a></h1>
+<pre class="py-src">
+<a name="Event"></a><div id="Event-def"><a name="L1"></a><tt class="py-lineno"> 1</tt> <a class="py-toggle" href="#" id="Event-toggle" onclick="return toggle('Event');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="nirena.event.keyboard.Event-class.html">Event</a><tt class="py-op">:</tt> </tt>
+</div><div id="Event-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="Event-expanded"><a name="L2"></a><tt class="py-lineno"> 2</tt>  <tt class="py-line">        <tt class="py-docstring">""" Contains information about what keyboardkeys were pressed during the event """</tt> </tt>
+<a name="Event.__init__"></a><div id="Event.__init__-def"><a name="L3"></a><tt class="py-lineno"> 3</tt> <a class="py-toggle" href="#" id="Event.__init__-toggle" onclick="return toggle('Event.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="nirena.event.keyboard.Event-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">key</tt><tt class="py-op">,</tt> <tt class="py-param">mod</tt><tt class="py-op">=</tt><tt class="py-name">None</tt><tt class="py-op">,</tt> <tt class="py-param">unicode</tt><tt class="py-op">=</tt><tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Event.__init__-collapsed" style="display:none;" pad="++" indent="++++++++++++"></div><div id="Event.__init__-expanded"><a name="L4"></a><tt class="py-lineno"> 4</tt>  <tt class="py-line">                <tt class="py-docstring">"""             </tt> </tt>
+<a name="L5"></a><tt class="py-lineno"> 5</tt>  <tt class="py-line"><tt class="py-docstring">                @param key: The key that was pressed represented by the PyGame keycode constants</tt> </tt>
+<a name="L6"></a><tt class="py-lineno"> 6</tt>  <tt class="py-line"><tt class="py-docstring">                @type key: C{int}</tt> </tt>
+<a name="L7"></a><tt class="py-lineno"> 7</tt>  <tt class="py-line"><tt class="py-docstring">                @param mod: A PyGame keycode to shift, alt, ctrl or super</tt> </tt>
+<a name="L8"></a><tt class="py-lineno"> 8</tt>  <tt class="py-line"><tt class="py-docstring">                @type mod: C{int}</tt> </tt>
+<a name="L9"></a><tt class="py-lineno"> 9</tt>  <tt class="py-line"><tt class="py-docstring">                @param unicode: Unicode representation of the key pressed</tt> </tt>
+<a name="L10"></a><tt class="py-lineno">10</tt>  <tt class="py-line"><tt class="py-docstring">                @type unicode: C{str}</tt> </tt>
+<a name="L11"></a><tt class="py-lineno">11</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L12"></a><tt class="py-lineno">12</tt>  <tt class="py-line"><tt class="py-docstring">                @raise ValueError: If mod is another keycode than shift, alt, ctrl or super """</tt> </tt>
+<a name="L13"></a><tt class="py-lineno">13</tt>  <tt class="py-line">                <tt class="py-keyword">pass</tt> </tt>
+</div><a name="L14"></a><tt class="py-lineno">14</tt>  <tt class="py-line">         </tt>
+<a name="Event.getInfo"></a><div id="Event.getInfo-def"><a name="L15"></a><tt class="py-lineno">15</tt> <a class="py-toggle" href="#" id="Event.getInfo-toggle" onclick="return toggle('Event.getInfo');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="nirena.event.keyboard.Event-class.html#getInfo">getInfo</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">key</tt><tt class="py-op">=</tt><tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Event.getInfo-collapsed" style="display:none;" pad="++" indent="++++++++++++"></div><div id="Event.getInfo-expanded"><a name="L16"></a><tt class="py-lineno">16</tt>  <tt class="py-line">                <tt class="py-docstring">""" Information about the event that happened.</tt> </tt>
+<a name="L17"></a><tt class="py-lineno">17</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L18"></a><tt class="py-lineno">18</tt>  <tt class="py-line"><tt class="py-docstring">                @param key: Dictionary key, if None, all values will be returned in a tuple</tt> </tt>
+<a name="L19"></a><tt class="py-lineno">19</tt>  <tt class="py-line"><tt class="py-docstring">                @return: Value of the key in the dictionary, or all values if no key was given """</tt> </tt>
+<a name="L20"></a><tt class="py-lineno">20</tt>  <tt class="py-line">                <tt class="py-keyword">return</tt> <tt class="py-number">0</tt><tt class="py-op">,</tt> <tt class="py-number">0</tt><tt class="py-op">,</tt> <tt class="py-string">u'a'</tt> </tt>
+</div><a name="L21"></a><tt class="py-lineno">21</tt>  <tt class="py-line">                 </tt>
+<a name="Event.timeSinceLastEvent"></a><div id="Event.timeSinceLastEvent-def"><a name="L22"></a><tt class="py-lineno">22</tt> <a class="py-toggle" href="#" id="Event.timeSinceLastEvent-toggle" onclick="return toggle('Event.timeSinceLastEvent');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="nirena.event.keyboard.Event-class.html#timeSinceLastEvent">timeSinceLastEvent</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Event.timeSinceLastEvent-collapsed" style="display:none;" pad="++" indent="++++++++++++"></div><div id="Event.timeSinceLastEvent-expanded"><a name="L23"></a><tt class="py-lineno">23</tt>  <tt class="py-line">                <tt class="py-docstring">""" Not sure how to implement this, will need to have a kind of storage for the time of the last event """</tt> </tt>
+<a name="L24"></a><tt class="py-lineno">24</tt>  <tt class="py-line">                <tt class="py-keyword">pass</tt> </tt>
+</div></div><a name="L25"></a><tt class="py-lineno">25</tt>  <tt class="py-line"> </tt>
+<a name="Listener"></a><div id="Listener-def"><a name="L26"></a><tt class="py-lineno">26</tt> <a class="py-toggle" href="#" id="Listener-toggle" onclick="return toggle('Listener');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="nirena.event.keyboard.Listener-class.html">Listener</a><tt class="py-op">:</tt> </tt>
+</div><div id="Listener-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="Listener-expanded"><a name="L27"></a><tt class="py-lineno">27</tt>  <tt class="py-line">        <tt class="py-docstring">""" Listens for the players keyboard actions """</tt> </tt>
+<a name="Listener.__init__"></a><div id="Listener.__init__-def"><a name="L28"></a><tt class="py-lineno">28</tt> <a class="py-toggle" href="#" id="Listener.__init__-toggle" onclick="return toggle('Listener.__init__');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="nirena.event.keyboard.Listener-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Listener.__init__-collapsed" style="display:none;" pad="++" indent="++++++++++++"></div><div id="Listener.__init__-expanded"><a name="L29"></a><tt class="py-lineno">29</tt>  <tt class="py-line">                <tt class="py-keyword">pass</tt> </tt>
+</div><a name="L30"></a><tt class="py-lineno">30</tt>  <tt class="py-line">                 </tt>
+<a name="Listener.listen"></a><div id="Listener.listen-def"><a name="L31"></a><tt class="py-lineno">31</tt> <a class="py-toggle" href="#" id="Listener.listen-toggle" onclick="return toggle('Listener.listen');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="nirena.event.keyboard.Listener-class.html#listen">listen</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">event</tt><tt class="py-op">=</tt><tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Listener.listen-collapsed" style="display:none;" pad="++" indent="++++++++++++"></div><div id="Listener.listen-expanded"><a name="L32"></a><tt class="py-lineno">32</tt>  <tt class="py-line">                <tt class="py-docstring">""" Calls all stored code when the relevant 'event' is active. </tt> </tt>
+<a name="L33"></a><tt class="py-lineno">33</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L34"></a><tt class="py-lineno">34</tt>  <tt class="py-line"><tt class="py-docstring">                @param event: Event object to pull information from, if None, nothing happened this frame """</tt> </tt>
+<a name="L35"></a><tt class="py-lineno">35</tt>  <tt class="py-line">                <tt class="py-keyword">pass</tt> </tt>
+</div><a name="L36"></a><tt class="py-lineno">36</tt>  <tt class="py-line"> </tt>
+<a name="Listener.onKeyDown"></a><div id="Listener.onKeyDown-def"><a name="L37"></a><tt class="py-lineno">37</tt> <a class="py-toggle" href="#" id="Listener.onKeyDown-toggle" onclick="return toggle('Listener.onKeyDown');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="nirena.event.keyboard.Listener-class.html#onKeyDown">onKeyDown</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">code</tt><tt class="py-op">,</tt> <tt class="py-param">keys</tt><tt class="py-op">=</tt><tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Listener.onKeyDown-collapsed" style="display:none;" pad="++" indent="++++++++++++"></div><div id="Listener.onKeyDown-expanded"><a name="L38"></a><tt class="py-lineno">38</tt>  <tt class="py-line">                <tt class="py-docstring">""" Stores 'code' to be called once when the user pushes down one of 'keys'</tt> </tt>
+<a name="L39"></a><tt class="py-lineno">39</tt>  <tt class="py-line"><tt class="py-docstring">                then calls the code with a keyboard.Event object as argument.</tt> </tt>
+<a name="L40"></a><tt class="py-lineno">40</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L41"></a><tt class="py-lineno">41</tt>  <tt class="py-line"><tt class="py-docstring">                @param code: Expects a function that takes one argument for the keyboard.Event object </tt> </tt>
+<a name="L42"></a><tt class="py-lineno">42</tt>  <tt class="py-line"><tt class="py-docstring">                @param keys: A list of pygame keycodes; if an entry is a list or tuple, first value </tt> </tt>
+<a name="L43"></a><tt class="py-lineno">43</tt>  <tt class="py-line"><tt class="py-docstring">                should be a modifier and second a key; if None, code will always be called when a key is pushed """</tt> </tt>
+<a name="L44"></a><tt class="py-lineno">44</tt>  <tt class="py-line">                <tt class="py-keyword">pass</tt> </tt>
+</div><a name="L45"></a><tt class="py-lineno">45</tt>  <tt class="py-line">                 </tt>
+<a name="Listener.whileKeyPressed"></a><div id="Listener.whileKeyPressed-def"><a name="L46"></a><tt class="py-lineno">46</tt> <a class="py-toggle" href="#" id="Listener.whileKeyPressed-toggle" onclick="return toggle('Listener.whileKeyPressed');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="nirena.event.keyboard.Listener-class.html#whileKeyPressed">whileKeyPressed</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">code</tt><tt class="py-op">,</tt> <tt class="py-param">keys</tt><tt class="py-op">=</tt><tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Listener.whileKeyPressed-collapsed" style="display:none;" pad="++" indent="++++++++++++"></div><div id="Listener.whileKeyPressed-expanded"><a name="L47"></a><tt class="py-lineno">47</tt>  <tt class="py-line">                <tt class="py-docstring">""" Stores 'code' to be called every frame from when the user </tt> </tt>
+<a name="L48"></a><tt class="py-lineno">48</tt>  <tt class="py-line"><tt class="py-docstring">                pushes down one of 'keys' until the user releases the same key</tt> </tt>
+<a name="L49"></a><tt class="py-lineno">49</tt>  <tt class="py-line"><tt class="py-docstring">                then calls the code with a keyboard.Event object as argument.</tt> </tt>
+<a name="L50"></a><tt class="py-lineno">50</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L51"></a><tt class="py-lineno">51</tt>  <tt class="py-line"><tt class="py-docstring">                @param code: Expects a function that takes one argument for the keyboard.Event object </tt> </tt>
+<a name="L52"></a><tt class="py-lineno">52</tt>  <tt class="py-line"><tt class="py-docstring">                @param keys: A list of pygame keycodes; if an entry is a list or tuple, first value</tt> </tt>
+<a name="L53"></a><tt class="py-lineno">53</tt>  <tt class="py-line"><tt class="py-docstring">                should be a modifier and second a key; if None, code will always be called while a key is being pushed """</tt> </tt>
+</div><a name="L54"></a><tt class="py-lineno">54</tt>  <tt class="py-line">         </tt>
+<a name="Listener.onKeyUp"></a><div id="Listener.onKeyUp-def"><a name="L55"></a><tt class="py-lineno">55</tt> <a class="py-toggle" href="#" id="Listener.onKeyUp-toggle" onclick="return toggle('Listener.onKeyUp');">-</a><tt class="py-line">        <tt class="py-keyword">def</tt> <a class="py-def-name" href="nirena.event.keyboard.Listener-class.html#onKeyUp">onKeyUp</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">code</tt><tt class="py-op">,</tt> <tt class="py-param">keys</tt><tt class="py-op">=</tt><tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Listener.onKeyUp-collapsed" style="display:none;" pad="++" indent="++++++++++++"></div><div id="Listener.onKeyUp-expanded"><a name="L56"></a><tt class="py-lineno">56</tt>  <tt class="py-line">                <tt class="py-docstring">""" Stores 'code' to be called when the user releases a previously pressed key and </tt> </tt>
+<a name="L57"></a><tt class="py-lineno">57</tt>  <tt class="py-line"><tt class="py-docstring">                then calls the code with a mouse.Event object as argument.</tt> </tt>
+<a name="L58"></a><tt class="py-lineno">58</tt>  <tt class="py-line"><tt class="py-docstring">                </tt> </tt>
+<a name="L59"></a><tt class="py-lineno">59</tt>  <tt class="py-line"><tt class="py-docstring">                @param code: Expects a function that takes one argument for the keyboard.Event object </tt> </tt>
+<a name="L60"></a><tt class="py-lineno">60</tt>  <tt class="py-line"><tt class="py-docstring">                @param keys: A list of pygame keycodes; if an entry is a list or tuple, first value</tt> </tt>
+<a name="L61"></a><tt class="py-lineno">61</tt>  <tt class="py-line"><tt class="py-docstring">                should be a modifier and second a key; if None, code will always be called when a key is released """</tt> </tt>
+<a name="L62"></a><tt class="py-lineno">62</tt>  <tt class="py-line">                <tt class="py-keyword">pass</tt> </tt>
+</div></div><a name="L63"></a><tt class="py-lineno">63</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="nirena-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Sat Dec 04 00:44:35 2010
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

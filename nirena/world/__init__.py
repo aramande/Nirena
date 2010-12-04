@@ -2,13 +2,13 @@ from nirena.entity import Entity
 from nirena.util.resources import load_image
 
 class World:
-	def __init__(self, background, entities, positions):
-		if background == None or background == "":
-			raise ValueError("World has to have a background")
-		
-		self.background = load_image(background)
+	""" A world is the equivalent of a single map, with all the relevant entity information. """
+	def __init__(self, entities):
+		""" 
+		@see: C{addEntity(self, entity)}
+		"""
 		self.entities = []
-		self.addEntity(entities, positions)
+		self.addEntity(entities)
 		
 	def getEntitiesWithin(point=None, size=None):
 		"""
@@ -16,27 +16,27 @@ class World:
 		Defaults to everything in the world.
 		To be implemented.
 		
-		@param  point  Expects a point, or two digits standing for x and y
-		@param  size  Expects two digits, signifying width and height
+		@param point: Expects a C{Point(x, y)}
+		@param size: Expects two digits, signifying width and height
+		@return: A list of Entity type items
 		"""
 		return self.entities
 		
-	def addEntity(self, entity, position):
+	def addEntity(self, entity):
+		""" Add one or more entities to the world, they decide their own position.
+		
+		@param entity: Expects any entity type, or a class with a C{show(self)} function, or a list with either of these as  """
 		if entity == None or entity == []:
 			raise ValueError("Don't add an entity if you don't have an entity to add")
-		if position == None or position == []:
-			raise ValueError("Don't add an entity if you don't have an position for your entity")
 		
 		if entity.__class__ == [].__class__:
-			if len(entity) != len(position):
-				raise IndexError("Entities and Positions has to have the same length.")
 			i = 0
 			while i < len(entity):
-				entity[i].setPosition(position[i])
+				self.entities.append(entity[i])
 				i+=1
 		else:
-			entity.setPosition(position)
-		self.entities.append(entity)
+			self.entities.append(entity)
 		
 	def draw(self):
+		""" Draws all entities onto the screen, the order depends on layer and z value of the entity. """
 		pass
